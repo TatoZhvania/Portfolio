@@ -39,7 +39,7 @@ const Works = () => {
                 data-aos-delay={delay}
                 data-aos-once="false"
               >
-                <div className="hidden group-hover:block text-center">
+                <div className="hidden group-hover:block text-center group-hover:pt-[50px] backdrop-blur-sm  bg-[#0c090aa5] h-full w-full">
                   <span className="text-2xl font-bold text-white tracking-wider">
                     {title}
                   </span>
