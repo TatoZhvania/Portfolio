@@ -6,6 +6,8 @@ import blockchain from './assets/blockhain.png';
 import space from './assets/space.png';
 import moviehub from './assets/moviehub.png';
 import netflix from './assets/netflix.png';
+import nikestore from './assets/nikestore.png';
+import bankweb from './assets/bankweb.png';
 
 import html from './assets/html.png';
 import css from './assets/css.png';
@@ -94,6 +96,24 @@ export const projects = {
         url: 'https://netflix-ab7a3.web.app/',
         delay: '400',
         fade: 'fade-down'
+
+    },
+    project9: {
+        image: nikestore,
+        title: 'Nike-Store',
+        github: "https://github.com/TatoZhvania/Nike-Store",
+        url: 'https://nike-store-lilac.vercel.app/',
+        delay: '400',
+        fade: 'fade-left'
+
+    },
+    project10: {
+        image: bankweb,
+        title: 'Bank-Website',
+        github: "https://github.com/TatoZhvania/x-pense",
+        url: 'https://x-pense-tz.netlify.app/',
+        delay: '400',
+        fade: 'fade-right'
 
     }
 }
