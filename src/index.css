@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+::root {
+  --primary-color: #00d8ff;
+}
+
+@layer base {
+  body {
+    @apply font-[Raleway];
+    width: 100%;
+  }
+
+  li {
+    @apply px-4;
+    @apply cursor-pointer;
+  }
+
+}
+
+.nav-links p {
+  position: relative;
+  color: #fff;
+  font-weight: 500;
+  transition: 0.2s ease-in-out;
+  border: 1px solid #9f38f9;
+  padding: 10px;
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+
+.nav-links p:hover {
+  color: #fff;
+  background: #9f38f9;
+  border: 1px solid #9f38f9;
+}
