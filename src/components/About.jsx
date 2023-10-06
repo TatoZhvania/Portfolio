@@ -27,17 +27,18 @@ const About = () => {
             data-aos-delay="500"
             data-aos-once="false"
           >
-            <p>Hi, and nice to meet you: {')'} PLease take a look around</p>
+            <p>Please take a look around</p>
           </div>
           <div data-aos="fade-left" data-aos-delay="500" data-aos-once="false">
             <p>
-              I'm learning at Business and Technology University in the IT
-              field. I'm a self-taught programmer, very motivated, active, and
-              responsible person. I'm a hardworking and ambitious front end (
-              React ) developer from Georgia, who wants to learn as much as
-              possible to enhance his skills as an individual and also as a team
-              worker. I wish I had spent this enthusiasm of mine in the right
-              company.
+              I'm self-taught web developer with a passion for creating engaging
+              and user-friendly websites. My skill set includes proficiency in
+              HTML, CSS, and JavaScript, along with expertise in React.js and
+              Tailwind CSS to build dynamic and responsive web applications. I'm
+              well-versed in version control using GIT and have a basic
+              understanding of PHP, SQL, and MySQL to handle server-side
+              development. I thrive on crafting seamless online experiences and
+              staying up-to-date with the latest web development trends.
             </p>
           </div>
         </div>
