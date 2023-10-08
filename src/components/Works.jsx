@@ -21,7 +21,7 @@ const Works = () => {
         </div>
 
         <div className="grid gap-2 sm:gap-3 md:grid-cols-2 xl:grid-cols-3 ">
-          {Object.values(projects).map((project, index) => {
+          {projects.map((project, index) => {
             const { image, title, github, url, delay, fade } = project;
             return (
               <div

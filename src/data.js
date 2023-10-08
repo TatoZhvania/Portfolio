@@ -25,98 +25,89 @@ import git from './assets/git.png';
 import firebase from './assets/firebase.png';
 
 
-export const projects = {
-    project1: {
+export const projects = [
+    {
         image: AIimg,
         title: 'OpenAI',
         github: "https://github.com/TatoZhvania/AI-App",
         url: 'https://tatozhvania.github.io/AI-App/',
         delay: '300',
         fade: 'fade-right'
-
     },
-    project2: {
+    {
         image: tictactoe,
         title: 'TicTacToe',
         github: "https://github.com/TatoZhvania/TicTacToe",
         url: 'https://tatozhvania.github.io/TicTacToe/',
         delay: '400',
         fade: 'fade-down'
-
     },
-    project3: {
+    {
         image: weatherApp,
         title: 'Weather-App',
         github: "https://github.com/TatoZhvania/Weather-App",
         url: 'https://tatozhvania.github.io/Weather-App/',
         delay: '500',
         fade: 'fade-left'
-
     },
-    project4: {
+    {
         image: dataSecure,
         title: 'DataSecure',
         github: "https://github.com/TatoZhvania/Data-Secure",
         url: 'https://data-secure-tz.netlify.app/',
         delay: '300',
         fade: 'fade-right'
-
     },
-    project5: {
+    {
         image: blockchain,
         title: 'Blockchain',
         github: "https://github.com/TatoZhvania/blockchain",
         url: 'https://blockchain-tz.netlify.app/',
         delay: '400',
         fade: 'fade-down'
-
     },
-    project6: {
+    {
         image: space,
         title: 'Space',
         github: "https://github.com/TatoZhvania/Space",
         url: 'https://space-tz.netlify.app/',
         delay: '500',
         fade: 'fade-left'
-
     },
-    project7: {
+    {
         image: moviehub,
         title: 'Movie-Hub',
         github: "https://github.com/TatoZhvania/Movie-Hub",
         url: 'https://tatozhvania.github.io/Movie-Hub/',
         delay: '300',
         fade: 'fade-right'
-
     },
-    project8: {
+    {
         image: netflix,
         title: 'Netflix-Clone',
         github: "https://github.com/TatoZhvania/Netflix",
         url: 'https://netflix-ab7a3.web.app/',
         delay: '400',
         fade: 'fade-down'
-
     },
-    project9: {
+    {
         image: nikestore,
         title: 'Nike-Store',
         github: "https://github.com/TatoZhvania/Nike-Store",
         url: 'https://nike-store-lilac.vercel.app/',
         delay: '400',
         fade: 'fade-left'
-
     },
-    project10: {
+    {
         image: bankweb,
         title: 'Bank-Website',
         github: "https://github.com/TatoZhvania/x-pense",
         url: 'https://x-pense-tz.netlify.app/',
         delay: '400',
         fade: 'fade-right'
-
     }
-}
+];
+
 
 export const skills =
     [
