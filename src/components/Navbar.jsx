@@ -42,7 +42,7 @@ const Navbar = () => {
         data-aos-delay="200"
       >
         <Link to="home" smooth={true} duration={500} className="cursor-pointer">
-          Portf<span className="text-[#00d8ff] text-2xl">olio</span>
+          Portf<span className="text-[#9f38f9] text-2xl">olio</span>
         </Link>
       </div>
       {/* M E N U */}
