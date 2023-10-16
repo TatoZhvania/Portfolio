@@ -8,6 +8,7 @@ import moviehub from './assets/moviehub.png';
 import netflix from './assets/netflix.png';
 import nikestore from './assets/nikestore.png';
 import bankweb from './assets/bankweb.png';
+import bankapp from './assets/bank-app.png'
 
 import html from './assets/html.png';
 import css from './assets/css.png';
@@ -87,6 +88,14 @@ export const projects = [
         title: 'Netflix-Clone',
         github: "https://github.com/TatoZhvania/Netflix",
         url: 'https://netflix-ab7a3.web.app/',
+        delay: '400',
+        fade: 'fade-left'
+    },
+    {
+        image: bankapp,
+        title: 'Bank-App',
+        github: "https://github.com/TatoZhvania/Bank-App",
+        url: 'https://bank-app-tz.netlify.app/',
         delay: '400',
         fade: 'fade-down'
     },
