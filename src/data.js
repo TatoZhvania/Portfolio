@@ -9,6 +9,7 @@ import netflix from './assets/netflix.png';
 import nikestore from './assets/nikestore.png';
 import bankweb from './assets/bankweb.png';
 import bankapp from './assets/bank-app.png'
+import ticketapp from './assets/ticket-app.png'
 
 import html from './assets/html.png';
 import css from './assets/css.png';
@@ -24,6 +25,7 @@ import sql from './assets/sql.png';
 import github from './assets/github.png';
 import git from './assets/git.png';
 import firebase from './assets/firebase.png';
+import mongodb from './assets/mongodb.png';
 
 
 export const projects = [
@@ -89,7 +91,7 @@ export const projects = [
         github: "https://github.com/TatoZhvania/Netflix",
         url: 'https://netflix-ab7a3.web.app/',
         delay: '400',
-        fade: 'fade-left'
+        fade: 'fade-up'
     },
     {
         image: bankapp,
@@ -97,7 +99,7 @@ export const projects = [
         github: "https://github.com/TatoZhvania/Bank-App",
         url: 'https://bank-app-tz.netlify.app/',
         delay: '400',
-        fade: 'fade-down'
+        fade: 'fade-left'
     },
     {
         image: nikestore,
@@ -105,7 +107,7 @@ export const projects = [
         github: "https://github.com/TatoZhvania/Nike-Store",
         url: 'https://nike-store-lilac.vercel.app/',
         delay: '400',
-        fade: 'fade-left'
+        fade: 'fade-right'
     },
     {
         image: bankweb,
@@ -113,7 +115,15 @@ export const projects = [
         github: "https://github.com/TatoZhvania/x-pense",
         url: 'https://x-pense-tz.netlify.app/',
         delay: '400',
-        fade: 'fade-right'
+        fade: 'fade-up'
+    },
+    {
+        image: ticketapp,
+        title: 'Ticket-App',
+        github: "https://github.com/TatoZhvania/Ticket-App",
+        url: 'https://ticket-app-tz.netlify.app/',
+        delay: '400',
+        fade: 'fade-left'
     }
 ];
 
@@ -131,7 +141,8 @@ export const skills =
         { src: github, alt: 'github-icon', name: 'GitHub', shadow: 'shadow-[#767676c2]', delay: '400', fade: 'fade-right' },
         { src: git, alt: 'git-icon', name: 'GIT', shadow: 'shadow-[#ff4b4bab]', delay: '500', fade: 'fade-right' },
         { src: firebase, alt: 'firebase-icon', name: 'Firebase', shadow: 'shadow-[#ffa811ac]', delay: '400', fade: 'fade-left' },
-        { src: php, alt: 'php-icon', name: 'PHP(basic)', shadow: 'shadow-[#AEB2D5]', delay: '500', fade: 'fade-left' },
+        { src: mongodb, alt: 'mongodb-icon', name: 'MongoDB', shadow: 'shadow-[#ffa811ac]', delay: '400', fade: 'fade-left' },
+        { src: php, alt: 'php-icon', name: 'PHP(basic)', shadow: 'shadow-[#AEB2D5]', delay: '500', fade: 'fade-right' },
         { src: mysql, alt: 'mysql-icon', name: 'MySQL', shadow: 'shadow-[#f29111]', delay: '400', fade: 'fade-right' },
-        { src: sql, alt: 'sql-icon', name: 'SQL', shadow: 'shadow-[#00758f]', delay: '500', fade: 'fade-right' },
+        { src: sql, alt: 'sql-icon', name: 'SQL', shadow: 'shadow-[#00758f]', delay: '500', fade: 'fade-left' },
     ]
