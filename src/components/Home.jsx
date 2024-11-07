@@ -1,4 +1,3 @@
-import React from 'react';
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import { Link } from 'react-scroll';
 import { FaGithub, FaLinkedin, FaFacebook, FaInstagram } from 'react-icons/fa';
