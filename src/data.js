@@ -146,3 +146,63 @@ export const skills =
         { src: mysql, alt: 'mysql-icon', name: 'MySQL', shadow: 'shadow-[#f29111]', delay: '400', fade: 'fade-right' },
         { src: sql, alt: 'sql-icon', name: 'SQL', shadow: 'shadow-[#00758f]', delay: '500', fade: 'fade-left' },
     ]
+
+
+// data.js
+
+export const experienceData = [
+    {
+        title: 'Senior Service Monitoring Specialist',
+        company: 'Crocobet',
+        date: 'Jun 2024 - Present',
+        description: `
+      ⚪My responsibilities include actively monitoring through Zabbix and Grafana, tracking system performance, i
+        dentifying anomalies, and coordinating with internal teams and external providers to address and resolve product defects, 
+        technical updates, and any service-related concerns. I manage and monitor automated scripts using Python, working closely 
+        with department to investigate and troubleshoot issues as they arise. Additionally, I perform thorough testing for new products, 
+        promotions, and updates as they go live. My technical expertise includes working with Docker for containerization and Linux 
+        environments. While I monitor Zabbix daily to ensure all systems are functioning optimally, I focus primarily on operational 
+        oversight rather than on the technical configuration aspects. This blend of monitoring, testing, and cross-functional communication 
+        supports our mission to deliver a seamless experience to our users and stakeholders.`,
+        delay: '200',
+        fade: 'fade-left'
+    },
+    {
+        title: 'Junior Service Monitoring Specialist',
+        company: 'Crocobet',
+        date: 'Jan 2024 - Jun 2024 • 6 mon',
+        description: `
+      ⚪Monitoring and maintaining the functionality of products and services on the website, identifying, reporting, and resolving 
+        issues using Jira, including follow-up on incidents and error handling with external providers. Communicating proactively with 
+        internal teams and external providers to address product defects, technical updates, and improvements. Ensuring continuous monitoring 
+        of automated scripts and coordinating with developers to troubleshoot and investigate issues. Conducting testing for new products,
+        promotions, and updates post-production, verifying functionality and promotional mechanics. Collaborating with Quality Assurance (QA)
+        to ensure comprehensive product and site performance, documenting and registering production bugs, and reporting incidents 
+        promptly for quick resolution. `,
+        delay: '200',
+        fade: 'fade-right'
+    },
+    {
+        title: 'KYC Agent',
+        company: 'Upgaming',
+        date: 'Oct 2022 - Dec 2022 • 3 mos',
+        description: `
+      ⚪Integrate SumSub to facilitate Know Your Customer (KYC) verification and IP checks, ensuring compliance with regulatory requirements.
+        This process includes verifying the identity of customers, assessing associated risks, and reviewing customer documentation to validate
+        authenticity and accuracy. This approach enhances security and regulatory adherence by identifying and addressing potential fraud risks in real-time.`,
+        delay: '200',
+        fade: 'fade-left'
+    },
+    {
+        title: 'Customer Service Specialist',
+        company: 'Upgaming',
+        date: 'Jun 2022 - Oct 2022 • 5 mos',
+        description: `
+      ⚪Provide exceptional service to customers within the gambling industry by promptly addressing inquiries, resolving issues, and ensuring
+        overall satisfaction. Communicate effectively through various channels such as email and live chat, demonstrating strong interpersonal and problem-solving skills.`,
+        delay: '200',
+        fade: 'fade-right'
+    }
+];
+
+

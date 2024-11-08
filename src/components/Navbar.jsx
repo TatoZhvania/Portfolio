@@ -62,6 +62,11 @@ const Navbar = () => {
             <p className="cursor-pointer">Skills</p>
           </Link>
         </li>
+        <li className="nav-links " data-aos="fade-down" data-aos-delay="500">
+          <Link to="experience" smooth={true} duration={500}>
+            <p className="cursor-pointer">Experience</p>
+          </Link>
+        </li>
         <li className="nav-links" data-aos="fade-down" data-aos-delay="600">
           <Link to="works" smooth={true} duration={500}>
             <p className="cursor-pointer">Works</p>

@@ -9,7 +9,7 @@ const About = () => {
         <div
           className="max-w-[1000px] w-full px-4 grid grid-cols-2 gap-8"
           data-aos="fade-left"
-          data-aos-delay="500"
+          data-aos-delay="200"
           data-aos-once="false"
         >
           <div className="sm:text-right pb-8 pl-4">
@@ -17,13 +17,13 @@ const About = () => {
               About
             </p>
           </div>
-          <div></div>
         </div>
-        <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4">
+        <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-1 px-4">
           <div
-            className="sm:text-right text-4xl font-bold "
+            className="text-4xl font-bold text-center"
+            style={{ letterSpacing: '0.4em' }}
             data-aos="fade-right"
-            data-aos-delay="500"
+            data-aos-delay="200"
             data-aos-once="false"
           >
             <p>Please take a look around</p>

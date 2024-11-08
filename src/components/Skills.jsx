@@ -12,7 +12,7 @@ const Skills = () => {
             data-aos-delay="500"
             data-aos-once="false"
           >
-            Experience
+            Skill
           </p>
           <p
             className="py-2"
