@@ -8,6 +8,7 @@ import {
   AiOutlineAppstore,
 } from 'react-icons/ai';
 import { BsPerson } from 'react-icons/bs';
+import Icon from '../assets/icon.svg';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -36,13 +37,9 @@ const Navbar = () => {
         : `fixed top-5`
     }  `}
     >
-      <div
-        className=" text-4xl font-bold text-[#9f38f9] py-4"
-        data-aos="fade-down"
-        data-aos-delay="200"
-      >
+      <div data-aos="fade-down" data-aos-delay="200">
         <Link to="home" smooth={true} duration={500} className="cursor-pointer">
-          Portf<span className="text-[#00d8ff] text-2xl">olio</span>
+          <img src={Icon} alt="icon" />
         </Link>
       </div>
       {/* M E N U */}
