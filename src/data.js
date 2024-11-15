@@ -34,7 +34,7 @@ export const projects = [
         title: 'OpenAI',
         github: "https://github.com/TatoZhvania/AI-App",
         url: 'https://tatozhvania.github.io/AI-App/',
-        delay: '300',
+        delay: '200',
         fade: 'fade-right'
     },
     {
@@ -42,7 +42,7 @@ export const projects = [
         title: 'TicTacToe',
         github: "https://github.com/TatoZhvania/TicTacToe",
         url: 'https://tatozhvania.github.io/TicTacToe/',
-        delay: '400',
+        delay: '300',
         fade: 'fade-down'
     },
     {
@@ -50,7 +50,7 @@ export const projects = [
         title: 'Weather-App',
         github: "https://github.com/TatoZhvania/Weather-App",
         url: 'https://tatozhvania.github.io/Weather-App/',
-        delay: '500',
+        delay: '400',
         fade: 'fade-left'
     },
     {
@@ -58,7 +58,7 @@ export const projects = [
         title: 'DataSecure',
         github: "https://github.com/TatoZhvania/Data-Secure",
         url: 'https://data-secure-tz.netlify.app/',
-        delay: '300',
+        delay: '200',
         fade: 'fade-right'
     },
     {
@@ -66,7 +66,7 @@ export const projects = [
         title: 'Blockchain',
         github: "https://github.com/TatoZhvania/blockchain",
         url: 'https://blockchain-tz.netlify.app/',
-        delay: '400',
+        delay: '300',
         fade: 'fade-down'
     },
     {
@@ -74,7 +74,7 @@ export const projects = [
         title: 'Space',
         github: "https://github.com/TatoZhvania/Space",
         url: 'https://space-tz.netlify.app/',
-        delay: '500',
+        delay: '300',
         fade: 'fade-left'
     },
     {
@@ -82,7 +82,7 @@ export const projects = [
         title: 'Movie-Hub',
         github: "https://github.com/TatoZhvania/Movie-Hub",
         url: 'https://tatozhvania.github.io/Movie-Hub/',
-        delay: '300',
+        delay: '200',
         fade: 'fade-right'
     },
     {
@@ -90,7 +90,7 @@ export const projects = [
         title: 'Netflix-Clone',
         github: "https://github.com/TatoZhvania/Netflix",
         url: 'https://netflix-ab7a3.web.app/',
-        delay: '400',
+        delay: '300',
         fade: 'fade-up'
     },
     {
@@ -106,7 +106,7 @@ export const projects = [
         title: 'Nike-Store',
         github: "https://github.com/TatoZhvania/Nike-Store",
         url: 'https://nike-store-lilac.vercel.app/',
-        delay: '400',
+        delay: '200',
         fade: 'fade-right'
     },
     {
@@ -114,7 +114,7 @@ export const projects = [
         title: 'Bank-Website',
         github: "https://github.com/TatoZhvania/x-pense",
         url: 'https://x-pense-tz.netlify.app/',
-        delay: '400',
+        delay: '300',
         fade: 'fade-up'
     },
     {
@@ -130,21 +130,21 @@ export const projects = [
 
 export const skills =
     [
-        { src: html, alt: 'html-icon', name: 'HTML', shadow: 'shadow-[#e34c26bf]', delay: '400', fade: 'fade-right' },
-        { src: css, alt: 'css-icon', name: 'CSS', shadow: 'shadow-[#00d9ff43]', delay: '500', fade: 'fade-right' },
-        { src: javascript, alt: 'js-icon', name: 'JavasCript', shadow: 'shadow-[#f0da4f94]', delay: '400', fade: 'fade-left' },
-        { src: typescript, alt: 'ts-icon', name: 'TypeScript', shadow: 'shadow-[#3178c6]', delay: '500', fade: 'fade-left' },
-        { src: vite, alt: 'vite-icon', name: 'Vite', shadow: 'shadow-[#611f80]', delay: '400', fade: 'fade-right' },
-        { src: react, alt: 'react-icon', name: 'React', shadow: 'shadow-[#00d9ff43]', delay: '500', fade: 'fade-right' },
-        { src: redux, alt: 'redux-icon', name: 'Redux', shadow: 'shadow-[#764abc]', delay: '400', fade: 'fade-left' },
-        { src: tailwind, alt: 'tailwind-icon', name: 'Tailwind', shadow: 'shadow-[#00d9ff43]', delay: '500', fade: 'fade-left' },
-        { src: github, alt: 'github-icon', name: 'GitHub', shadow: 'shadow-[#767676c2]', delay: '400', fade: 'fade-right' },
-        { src: git, alt: 'git-icon', name: 'GIT', shadow: 'shadow-[#ff4b4bab]', delay: '500', fade: 'fade-right' },
-        { src: firebase, alt: 'firebase-icon', name: 'Firebase', shadow: 'shadow-[#ffa811ac]', delay: '400', fade: 'fade-left' },
+        { src: html, alt: 'html-icon', name: 'HTML', shadow: 'shadow-[#e34c26bf]', delay: '300', fade: 'fade-right' },
+        { src: css, alt: 'css-icon', name: 'CSS', shadow: 'shadow-[#00d9ff43]', delay: '400', fade: 'fade-right' },
+        { src: javascript, alt: 'js-icon', name: 'JavasCript', shadow: 'shadow-[#f0da4f94]', delay: '300', fade: 'fade-left' },
+        { src: typescript, alt: 'ts-icon', name: 'TypeScript', shadow: 'shadow-[#3178c6]', delay: '400', fade: 'fade-left' },
+        { src: vite, alt: 'vite-icon', name: 'Vite', shadow: 'shadow-[#611f80]', delay: '300', fade: 'fade-right' },
+        { src: react, alt: 'react-icon', name: 'React', shadow: 'shadow-[#00d9ff43]', delay: '400', fade: 'fade-right' },
+        { src: redux, alt: 'redux-icon', name: 'Redux', shadow: 'shadow-[#764abc]', delay: '300', fade: 'fade-left' },
+        { src: tailwind, alt: 'tailwind-icon', name: 'Tailwind', shadow: 'shadow-[#00d9ff43]', delay: '400', fade: 'fade-left' },
+        { src: github, alt: 'github-icon', name: 'GitHub', shadow: 'shadow-[#767676c2]', delay: '300', fade: 'fade-right' },
+        { src: git, alt: 'git-icon', name: 'GIT', shadow: 'shadow-[#ff4b4bab]', delay: '400', fade: 'fade-right' },
+        { src: firebase, alt: 'firebase-icon', name: 'Firebase', shadow: 'shadow-[#ffa811ac]', delay: '300', fade: 'fade-left' },
         { src: mongodb, alt: 'mongodb-icon', name: 'MongoDB', shadow: 'shadow-[#ffa811ac]', delay: '400', fade: 'fade-left' },
-        { src: php, alt: 'php-icon', name: 'PHP(basic)', shadow: 'shadow-[#AEB2D5]', delay: '500', fade: 'fade-right' },
+        { src: php, alt: 'php-icon', name: 'PHP(basic)', shadow: 'shadow-[#AEB2D5]', delay: '300', fade: 'fade-right' },
         { src: mysql, alt: 'mysql-icon', name: 'MySQL', shadow: 'shadow-[#f29111]', delay: '400', fade: 'fade-right' },
-        { src: sql, alt: 'sql-icon', name: 'SQL', shadow: 'shadow-[#00758f]', delay: '500', fade: 'fade-left' },
+        { src: sql, alt: 'sql-icon', name: 'SQL', shadow: 'shadow-[#00758f]', delay: '300', fade: 'fade-left' },
     ]
 
 

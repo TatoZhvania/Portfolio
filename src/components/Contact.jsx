@@ -27,13 +27,13 @@ const Contact = () => {
         className="flex flex-col max-w-[600px] w-full"
       >
         <div className="pb-8">
-          <div data-aos="fade-right" data-aos-delay="500" data-aos-once="false">
+          <div data-aos="fade-right" data-aos-delay="300" data-aos-once="false">
             <p className="font-bold text-[#9f38f9] text-4xl border-b-4 border-[#00d8ff] max-w-[140px] mt-8">
               Contact
             </p>
           </div>
 
-          <div data-aos="fade-left" data-aos-delay="500" data-aos-once="false">
+          <div data-aos="fade-left" data-aos-delay="300" data-aos-once="false">
             <p className="text-gray-300 py-4">
               {'//'} Submit the form below or shoot me an email -
               tatojvania.03@gmail.com
@@ -48,7 +48,7 @@ const Contact = () => {
           placeholder="Name"
           name="name"
           data-aos="fade-right"
-          data-aos-delay="500"
+          data-aos-delay="300"
           data-aos-once="false"
           {...register('name', {
             require: true,
@@ -69,7 +69,7 @@ const Contact = () => {
           required
           name="email"
           data-aos="fade-left"
-          data-aos-delay="600"
+          data-aos-delay="500"
           data-aos-once="false"
           {...register('email', {
             require: true,
@@ -90,7 +90,7 @@ const Contact = () => {
           placeholder="Message..."
           rows="3"
           data-aos="fade-right"
-          data-aos-delay="700"
+          data-aos-delay="600"
           data-aos-once="false"
           {...register('message', {
             require: true,
@@ -103,7 +103,7 @@ const Contact = () => {
             {errors.message.type === 'maxLength' && 'Max length is 2000 char!'}
           </p>
         )}
-        <div data-aos="fade-right" data-aos-delay="700" data-aos-once="false">
+        <div data-aos="fade-right" data-aos-delay="600" data-aos-once="false">
           <button
             className="max-w-[170px] mx-auto py-3 mt-6 text-[#fff] cursor-pointer border-2 px-7  my-4 flex items-center transition duration-250 ease-in-out hover:bg-[#7838f9] hover:border-[#7838f9]"
             type="submit"
