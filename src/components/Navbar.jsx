@@ -38,8 +38,17 @@ const Navbar = () => {
     }  `}
     >
       <div data-aos="fade-down" data-aos-delay="200">
-        <Link to="home" smooth={true} duration={500} className="cursor-pointer">
-          <img src={Icon} alt="icon" />
+        <Link
+          to="home"
+          smooth={true}
+          duration={500}
+          className="cursor-pointer "
+        >
+          <img
+            src={Icon}
+            alt="icon"
+            className="w-44 md:w-52 ml-[-30px] md:ml-0"
+          />
         </Link>
       </div>
       {/* M E N U */}
@@ -79,7 +88,7 @@ const Navbar = () => {
       {/* H A M B U R G E R */}
       <div
         onClick={handleClick}
-        className="text-second md:hidden z-90  cursor-pointer transition-all duration-500 ease-in-out active:scale-110 hover:scale-125 "
+        className="text-second md:hidden z-90  cursor-pointer transition-all duration-500 ease-in-out active:scale-110 hover:scale-125 text-[#fff]"
       >
         {!nav ? <FaBars size={25} /> : <FaTimes size={25} />}
       </div>
