@@ -28,7 +28,7 @@ const About = () => {
           >
             <p>Please take a look around</p>
           </div>
-          <div data-aos="fade-left" data-aos-delay="500" data-aos-once="false">
+          <div data-aos="fade-left" data-aos-delay="400" data-aos-once="false">
             <p>
               I'm self-taught web developer with a passion for creating engaging
               and user-friendly websites. My skill set includes proficiency in
