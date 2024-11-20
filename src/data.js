@@ -1,3 +1,4 @@
+//Projects images
 import AIimg from './assets/AI-img.png';
 import tictactoe from './assets/tictactoe.png';
 import weatherApp from './assets/weather-app.png';
@@ -11,6 +12,7 @@ import bankweb from './assets/bankweb.png';
 import bankapp from './assets/bank-app.png'
 import ticketapp from './assets/ticket-app.png'
 
+//Skillss
 import html from './assets/html.png';
 import css from './assets/css.png';
 import javascript from './assets/javascript.png';
@@ -148,7 +150,6 @@ export const skills =
     ]
 
 
-// data.js
 
 export const experienceData = [
     {

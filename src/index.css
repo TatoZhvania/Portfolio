@@ -4,7 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 ::root {
   --primary-color: #00d8ff;
 }
@@ -12,6 +11,7 @@
 @layer base {
   body {
     @apply font-[Raleway];
+    @apply scrollbar-none;
     width: 100%;
   }
 
@@ -20,6 +20,17 @@
     @apply cursor-pointer;
   }
 
+  html {
+    @apply scrollbar-none;
+  }
+
+  .scrollbar-none {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  .scrollbar-none::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge, and Opera */
+  }
 }
 
 .nav-links p {
