@@ -144,7 +144,7 @@ export const skills =
         { src: git, alt: 'git-icon', name: 'GIT', shadow: 'shadow-[#ff4b4bab]', delay: '400', fade: 'fade-right' },
         { src: firebase, alt: 'firebase-icon', name: 'Firebase', shadow: 'shadow-[#ffa811ac]', delay: '300', fade: 'fade-left' },
         { src: mongodb, alt: 'mongodb-icon', name: 'MongoDB', shadow: 'shadow-[#ffa811ac]', delay: '400', fade: 'fade-left' },
-        { src: php, alt: 'php-icon', name: 'PHP(basic)', shadow: 'shadow-[#AEB2D5]', delay: '300', fade: 'fade-right' },
+        // { src: php, alt: 'php-icon', name: 'PHP(basic)', shadow: 'shadow-[#AEB2D5]', delay: '300', fade: 'fade-right' },
         { src: mysql, alt: 'mysql-icon', name: 'MySQL', shadow: 'shadow-[#f29111]', delay: '400', fade: 'fade-right' },
         { src: sql, alt: 'sql-icon', name: 'SQL', shadow: 'shadow-[#00758f]', delay: '300', fade: 'fade-left' },
     ]
@@ -157,14 +157,12 @@ export const experienceData = [
         company: 'Crocobet',
         date: 'Jun 2024 - Present',
         description: `
-      ⚪My responsibilities include actively monitoring through Zabbix and Grafana, tracking system performance, i
-        dentifying anomalies, and coordinating with internal teams and external providers to address and resolve product defects, 
-        technical updates, and any service-related concerns. I manage and monitor automated scripts using Python, working closely 
-        with department to investigate and troubleshoot issues as they arise. Additionally, I perform thorough testing for new products, 
-        promotions, and updates as they go live. My technical expertise includes working with Docker for containerization and Linux 
-        environments. While I monitor Zabbix daily to ensure all systems are functioning optimally, I focus primarily on operational 
-        oversight rather than on the technical configuration aspects. This blend of monitoring, testing, and cross-functional communication 
-        supports our mission to deliver a seamless experience to our users and stakeholders.`,
+        ⚪My responsibilities include monitoring system performance using Zabbix and Grafana, managing automated Python scripts, and ensuring 
+        seamless product and service functionality. I track and report issues in Jira, follow up on resolutions, and test new products and 
+        promotions as they go live. Additionally, I communicate with developers and providers to investigate and resolve technical concerns, 
+        register production bugs, and inform the company about updates and incidents. This combination of monitoring, reporting, and collaboration
+        ensures smooth operations and user satisfaction. My technical expertise includes working with Docker for containerization, 
+        Linux environments, and Airflow for orchestrating and managing Python scripts. I use Graylog for log search and analysis to detect and resolve issues efficiently.`,
         delay: '200',
         fade: 'fade-left'
     },
@@ -173,7 +171,7 @@ export const experienceData = [
         company: 'Crocobet',
         date: 'Jan 2024 - Jun 2024 • 6 mon',
         description: `
-      ⚪Monitoring and maintaining the functionality of products and services on the website, identifying, reporting, and resolving 
+        ⚪Monitoring and maintaining the functionality of products and services on the website, identifying, reporting, and resolving 
         issues using Jira, including follow-up on incidents and error handling with external providers. Communicating proactively with 
         internal teams and external providers to address product defects, technical updates, and improvements. Ensuring continuous monitoring 
         of automated scripts and coordinating with developers to troubleshoot and investigate issues. Conducting testing for new products,
@@ -188,7 +186,7 @@ export const experienceData = [
         company: 'Upgaming',
         date: 'Oct 2022 - Dec 2022 • 3 mos',
         description: `
-      ⚪Integrate SumSub to facilitate Know Your Customer (KYC) verification and IP checks, ensuring compliance with regulatory requirements.
+        ⚪Integrate SumSub to facilitate Know Your Customer (KYC) verification and IP checks, ensuring compliance with regulatory requirements.
         This process includes verifying the identity of customers, assessing associated risks, and reviewing customer documentation to validate
         authenticity and accuracy. This approach enhances security and regulatory adherence by identifying and addressing potential fraud risks in real-time.`,
         delay: '200',
@@ -199,7 +197,7 @@ export const experienceData = [
         company: 'Upgaming',
         date: 'Jun 2022 - Oct 2022 • 5 mos',
         description: `
-      ⚪Provide exceptional service to customers within the gambling industry by promptly addressing inquiries, resolving issues, and ensuring
+        ⚪Provide exceptional service to customers within the gambling industry by promptly addressing inquiries, resolving issues, and ensuring
         overall satisfaction. Communicate effectively through various channels such as email and live chat, demonstrating strong interpersonal and problem-solving skills.`,
         delay: '200',
         fade: 'fade-right'
