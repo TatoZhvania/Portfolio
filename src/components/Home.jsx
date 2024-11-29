@@ -19,8 +19,8 @@ const Home = () => {
         <ParticleBg />
       </div>
       <div className="w-[800px] mx-auto h-full pl-2 flex flex-col justify-center lg:pl-[170px] md:pl-[100px]">
-        <motion.div
-          className="bg-[#770fd2] shadow-md shadow-[#770fd2] rounded-sm w-full h-[4px] fixed top-[80px] left-0"
+      <motion.div
+          className="hidden md:block bg-[#770fd2] shadow-md shadow-[#770fd2] rounded-sm w-full h-[4px] fixed top-[80px] left-0"
           style={{ scaleX: scrollYProgress }}
         >
           {'.'}
