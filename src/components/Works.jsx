@@ -2,7 +2,7 @@ import { projects } from '../data';
 
 const Works = () => {
   return (
-    <div name="works" className="w-full md:screen text-gray-300 pt-[200px] ">
+    <div name="works" className="w-full md:screen text-gray-300 pt-[200px]">
       <div className="md:max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div className="pb-8 mx-auto">
           <p
@@ -19,7 +19,7 @@ const Works = () => {
           </p>
         </div>
 
-        <div className="grid gap-2 sm:gap-3 md:grid-cols-2 xl:grid-cols-3 ">
+        <div className="grid gap-2 sm:gap-3 md:grid-cols-2 xl:grid-cols-3">
           {projects.map((project, index) => {
             const { image, title, github, url, delay, fade } = project;
             return (
@@ -33,16 +33,17 @@ const Works = () => {
                   width: '300px',
                   height: '200px',
                 }}
-                className="shadow-lg shadow-[#343434] group container rounded-md flex justify-center items-center mx-auto content-div"
+                className="shadow-lg shadow-[#343434] group container rounded-md flex justify-center items-center mx-auto content-div relative"
                 data-aos={fade}
                 data-aos-delay={delay}
                 data-aos-once="false"
               >
-                <div className="hidden group-hover:block text-center group-hover:pt-[50px] backdrop-blur-sm  bg-[#0c090aa5] h-full w-full">
+                {/* Hover Content */}
+                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 backdrop-blur-sm bg-[#0c090aa5] flex flex-col justify-center items-center transform group-hover:scale-105 transition-all duration-300 ease-in-out">
                   <span className="text-2xl font-bold text-white tracking-wider">
                     {title}
                   </span>
-                  <div>
+                  <div className="flex space-x-4 mt-4">
                     <a href={github} rel="noreferrer" target="_blank">
                       <button className="mx-6 text-center rounded-lg px-4 py-2 m-2 bg-white text-gray-700 font-bold text-lg">
                         Code

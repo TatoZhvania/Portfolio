@@ -119,14 +119,6 @@ export const projects = [
         delay: '300',
         fade: 'fade-up'
     },
-    {
-        image: ticketapp,
-        title: 'Ticket-App',
-        github: "https://github.com/TatoZhvania/Ticket-App",
-        url: 'https://ticket-app-tz.netlify.app/',
-        delay: '400',
-        fade: 'fade-left'
-    }
 ];
 
 
