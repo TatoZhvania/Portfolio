@@ -30,14 +30,14 @@ const About = () => {
           </div>
           <div data-aos="fade-left" data-aos-delay="400" data-aos-once="false">
             <p>
-              I'm self-taught web developer with a passion for creating engaging
-              and user-friendly websites. My skill set includes proficiency in
-              HTML, CSS, and JavaScript, along with expertise in React.js and
-              Tailwind CSS to build dynamic and responsive web applications. I'm
-              well-versed in version control using GIT and have a basic
-              understanding of PHP, SQL, and MySQL to handle server-side
-              development. I thrive on crafting seamless online experiences and
-              staying up-to-date with the latest web development trends.
+            I'm a hardworking and ambitious Engineer from Georgia with a strong foundation in Web Development 
+            and DevOps technologies. Passionate about building efficient, scalable, and user-friendly applications, 
+            I bring a unique blend of frontend creativity and backend reliability.
+            With hands-on experience in Linux, Python and Docker I specialize in monitoring automation, 
+            system performance optimization, and operational support. I'm proficient in tools like Grafana, Prometheus and Graylog,
+            ensuring early detection of anomalies and maintaining smooth and uninterrupted operations
+            As a self-taught Web Developer, I’m driven by a passion for crafting engaging digital experiences. 
+            I build responsive and dynamic web applications using React.js and Tailwind CSS
             </p>
           </div>
         </div>
