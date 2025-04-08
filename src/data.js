@@ -145,31 +145,26 @@ export const skills =
 
 export const experienceData = [
     {
-        title: 'Senior Service Monitoring Specialist',
+        title: 'Monitoring Engineer',
         company: 'Crocobet',
-        date: 'Jun 2024 - Present',
+        date: 'Jan 2024 - Present',
         description: `
-        ⚪My responsibilities include monitoring system performance using Zabbix and Grafana, managing automated Python scripts, and ensuring 
-        seamless product and service functionality. I track and report issues in Jira, follow up on resolutions, and test new products and 
-        promotions as they go live. Additionally, I communicate with developers and providers to investigate and resolve technical concerns, 
-        register production bugs, and inform the company about updates and incidents. This combination of monitoring, reporting, and collaboration
-        ensures smooth operations and user satisfaction. My technical expertise includes working with Docker for containerization, 
-        Linux environments, and Airflow for orchestrating and managing Python scripts. I use Graylog for log search and analysis to detect and resolve issues efficiently.`,
-        delay: '200',
-        fade: 'fade-left'
-    },
-    {
-        title: 'Junior Service Monitoring Specialist',
-        company: 'Crocobet',
-        date: 'Jan 2024 - Jun 2024 • 6 mon',
-        description: `
-        ⚪Monitoring and maintaining the functionality of products and services on the website, identifying, reporting, and resolving 
-        issues using Jira, including follow-up on incidents and error handling with external providers. Communicating proactively with 
-        internal teams and external providers to address product defects, technical updates, and improvements. Ensuring continuous monitoring 
-        of automated scripts and coordinating with developers to troubleshoot and investigate issues. Conducting testing for new products,
-        promotions, and updates post-production, verifying functionality and promotional mechanics. Collaborating with Quality Assurance (QA)
-        to ensure comprehensive product and site performance, documenting and registering production bugs, and reporting incidents 
-        promptly for quick resolution. `,
+        ⚪I actively monitor system performance using Zabbix, Grafana, and Graylog, ensuring
+        early detection of anomalies and maintaining smooth and uninterrupted operations. My
+        responsibilities include monitoring and maintaining website functionality, proactively
+        identifying and resolving issues through Jira, and coordinating with external providers to
+        address technical challenges efficiently.
+        I manage and oversee Python scripts with Airflow, ensuring automation processes run
+        effectively. Additionally, I work closely with developers and infrastructure teams to
+        troubleshootissues,resolve defects, and implement critical updates. By maintaining
+        automated scripts and continuously optimizing system processes, I help ensure high
+        availability and performance across applications. I facilitate smooth collaboration
+        between development, operations, and QA teams through clear communication, making
+        sure technical improvements support company goals and efficiency.
+        My technical expertise spans Docker, Linux environments, and operational oversight,
+        enabling me to support a stable, scalable, and efficient user experience. By leveraging
+        monitoring tools and automation, I contribute to a proactive and well-structured system
+        management approach, minimizing downtime and maximizing reliability. `,
         delay: '200',
         fade: 'fade-right'
     },
