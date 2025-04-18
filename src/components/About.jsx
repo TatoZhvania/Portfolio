@@ -26,7 +26,7 @@ const About = () => {
             data-aos-delay="200"
             data-aos-once="false"
           >
-            <p>Please take a look around</p>
+            <p>Please take a look around!</p>
           </div>
           <div data-aos="fade-left" data-aos-delay="400" data-aos-once="false">
             <p>
