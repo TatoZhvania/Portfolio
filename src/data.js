@@ -171,24 +171,14 @@ export const experienceData = [
     {
         title: 'KYC Agent',
         company: 'Upgaming',
-        date: 'Oct 2022 - Dec 2022 • 3 mos',
+        date: 'Jun 2022 - Dec 2022 • 7 mos',
         description: `
-        ⚪Integrate SumSub to facilitate Know Your Customer (KYC) verification and IP checks, ensuring compliance with regulatory requirements.
+        ⚪Integrate Verification Sites to facilitate Know Your Customer (KYC) verification and IP checks, ensuring compliance with regulatory requirements.
         This process includes verifying the identity of customers, assessing associated risks, and reviewing customer documentation to validate
         authenticity and accuracy. This approach enhances security and regulatory adherence by identifying and addressing potential fraud risks in real-time.`,
         delay: '200',
         fade: 'fade-left'
     },
-    {
-        title: 'Customer Service Specialist',
-        company: 'Upgaming',
-        date: 'Jun 2022 - Oct 2022 • 5 mos',
-        description: `
-        ⚪Provide exceptional service to customers within the gambling industry by promptly addressing inquiries, resolving issues, and ensuring
-        overall satisfaction. Communicate effectively through various channels such as email and live chat, demonstrating strong interpersonal and problem-solving skills.`,
-        delay: '200',
-        fade: 'fade-right'
-    }
 ];
 
 

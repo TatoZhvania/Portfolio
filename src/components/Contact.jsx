@@ -35,8 +35,7 @@ const Contact = () => {
 
           <div data-aos="fade-left" data-aos-delay="300" data-aos-once="false">
             <p className="text-gray-300 py-4">
-              {'//'} Submit the form below or shoot me an email -
-              tatojvania.03@gmail.com
+              {'//'} Submit the form below
             </p>
           </div>
         </div>

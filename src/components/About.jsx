@@ -21,7 +21,7 @@ const About = () => {
         <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-1 px-4">
           <div
             className="text-4xl font-bold text-center"
-            style={{ letterSpacing: '0.4em' }}
+            style={{ letterSpacing: '0.5em' }}
             data-aos="fade-right"
             data-aos-delay="200"
             data-aos-once="false"
@@ -30,14 +30,14 @@ const About = () => {
           </div>
           <div data-aos="fade-left" data-aos-delay="400" data-aos-once="false">
             <p>
-            I'm a hardworking and ambitious Engineer from Georgia with a strong foundation in Web Development 
-            and DevOps technologies. Passionate about building efficient, scalable, and user-friendly applications, 
-            I bring a unique blend of frontend creativity and backend reliability.
-            With hands-on experience in Linux, Python and Docker I specialize in monitoring automation, 
-            system performance optimization, and operational support. I'm proficient in tools like Grafana, Prometheus and Graylog,
-            ensuring early detection of anomalies and maintaining smooth and uninterrupted operations
-            As a self-taught Web Developer, I’m driven by a passion for crafting engaging digital experiences. 
-            I build responsive and dynamic web applications using React.js and Tailwind CSS
+            I am a highly motivated and disciplined DevOps Engineer from Georgia with a 
+            comprehensive skill set that spans full-stack development and specialized Monitoring 
+            Engineering. Passionate about building efficient and scalable
+            web applications, implementing, and maintaining deployment pipelines.
+            I possess strong hands-on experience with a modern technology stack including Linux, 
+            Python, Docker, Kubernetes, Grafana, Prometheus and so on. I specialize in building end-to-end 
+            monitoring solutions, automating alerting systems, and optimizing system performance to 
+            ensure maximum reliability and uptime.
             </p>
           </div>
         </div>

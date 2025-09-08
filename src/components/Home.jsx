@@ -134,13 +134,13 @@ const Home = () => {
 
           <li className="w-[260px] h-[40px] flex justify-between items-center ml-[-100px] hover:ml-[100px] duration-300 bg-[#EB8F00]">
             <a
-              href="mailto:tatojvania.03@gmail.com"
+              href="mailto:tato.zhvania.1@gmail.com"
               target="_blank"
               rel="noreferrer"
               className="flex justify-between items-center w-full text-fray-300 ml-5"
             >
               <div className="flex gap-4">
-                <p className="ml-[-15px]"> tatojvania.03@gmail.com </p>
+                <p className="ml-[-15px]"> tato.zhvania.1@gmail.com </p>
                 <span>
                   <HiOutlineMail size={25} />
                 </span>
