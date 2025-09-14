@@ -27,7 +27,7 @@ const Experience = () => {
               data-aos-once="false"
             >
               <div>
-                <h1 className="font-bold italic text-3xl border-b-4 max-w-[990px] mb-2">
+                <h1 className="font-bold italic text-3xl border-b-4 mb-2">
                   {item.title} -{' '}
                   <span className="text-[#9f38f9]">{item.company}</span>
                 </h1>

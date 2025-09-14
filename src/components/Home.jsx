@@ -36,18 +36,18 @@ const Home = () => {
           </p>
         </div>
         <div data-aos="fade-down" data-aos-delay="600" data-aos-once="false">
-          <h1 className="text-4xl sm:text-6xl font-bold text-[#fff]">
+          <h1 className="text-4xl sm:text-5xl font-bold text-[#fff]">
             Tato Zhvania.
           </h1>
         </div>
         <div data-aos="fade-right" data-aos-delay="700" data-aos-once="false">
-          <h1 className="text-4xl sm:text-6xl font-bold text-[#fff]">
-            I'm a Web Developer
+          <h1 className="text-4xl sm:text-2xl font-bold text-[#fff]">
+            I'm a DevOps Engineer | Full-Stack Enginneer
           </h1>
         </div>
         <div data-aos="fade-right" data-aos-delay="700" data-aos-once="false">
           <p className="text-[#c087f2] py-4 max-w-[600px] text-lg">
-            Self-taught programmer. {'</>'}
+            Self-taught. {'</>'}
           </p>
         </div>
         <div data-aos="fade-right" data-aos-delay="800" data-aos-once="false">

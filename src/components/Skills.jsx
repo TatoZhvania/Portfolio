@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
-import { skills } from '../data';
+import { web_skills } from '../data';
+import { devops_skills } from '../data';
 
 const Skills = () => {
   return (
@@ -7,12 +8,12 @@ const Skills = () => {
       <div className="max-w-[1000px]  mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div>
           <p
-            className="font-bold text-[#9f38f9] text-4xl border-b-4 border-[#00d8ff] max-w-[195px] mb-2"
+            className="font-bold text-[#9f38f9] text-4xl border-b-4 border-[#00d8ff] max-w-[155px] mb-2"
             data-aos="fade-right"
             data-aos-delay="500"
             data-aos-once="false"
           >
-            Skill
+            My Skills
           </p>
           <p
             className="py-2"
@@ -20,12 +21,12 @@ const Skills = () => {
             data-aos-delay="500"
             data-aos-once="false"
           >
-            {'//'} These are technologies I've worked with
+            {'//'} Web Development
           </p>
         </div>
 
         <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-10 text-center py-8">
-          {skills.map((skills, index) => (
+          {web_skills.map((skills, index) => (
             <div
               key={index}
               className={`shadow-lg ${skills.shadow} hover:scale-110 duration-500`}
@@ -41,6 +42,36 @@ const Skills = () => {
               <p className="my-4">{skills.name}</p>
             </div>
           ))}
+        </div>
+
+        <div>
+          <p
+            className="py-2"
+            data-aos="fade-left"
+            data-aos-delay="500"
+            data-aos-once="false"
+          >
+            {'//'} DevOps Engineering
+          </p>
+
+          <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-10 text-center py-8">
+          {devops_skills.map((skills, index) => (
+            <div
+              key={index}
+              className={`shadow-lg ${skills.shadow} hover:scale-110 duration-500`}
+              data-aos={skills.fade}
+              data-aos-delay={skills.delay}
+              data-aos-once="false"
+            >
+              <img
+                src={skills.src}
+                alt={skills.alt}
+                className="w-[20%] mx-auto"
+              />
+              <p className="my-4">{skills.name}</p>
+            </div>
+          ))}
+        </div>
         </div>
       </div>
     </div>

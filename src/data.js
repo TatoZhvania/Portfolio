@@ -29,6 +29,17 @@ import git from './assets/git.png';
 import firebase from './assets/firebase.png';
 import mongodb from './assets/mongodb.png';
 
+import python from './assets/python.png'
+import bash from './assets/bash.png'
+import docker from './assets/Docker.png'
+import k8s from './assets/kubernetes.png'
+import helm from './assets/helm.png'
+import terraform from './assets/terraform.png'
+import aws from './assets/aws.png'
+import argocd from './assets/argocd.png'
+import grafana from './assets/grafana.png'
+import prometheus from './assets/prometheus.png'
+
 
 export const projects = [
     {
@@ -122,7 +133,7 @@ export const projects = [
 ];
 
 
-export const skills =
+export const web_skills =
     [
         { src: html, alt: 'html-icon', name: 'HTML', shadow: 'shadow-[#e34c26bf]', delay: '300', fade: 'fade-right' },
         { src: css, alt: 'css-icon', name: 'CSS', shadow: 'shadow-[#00d9ff43]', delay: '400', fade: 'fade-right' },
@@ -141,13 +152,38 @@ export const skills =
         { src: sql, alt: 'sql-icon', name: 'SQL', shadow: 'shadow-[#00758f]', delay: '300', fade: 'fade-left' },
     ]
 
+export const devops_skills =
+    [
+        { src: bash, alt: 'bash-icon', name: 'Bash', shadow: 'shadow-[#4eaa25]', delay: '300', fade: 'fade-right' },     
+        { src: docker, alt: 'docker-icon', name: 'Docker', shadow: 'shadow-[#1D63ED]', delay: '300', fade: 'fade-right' },   
+        { src: python, alt: 'python-icon', name: 'Python', shadow: 'shadow-[#4B8BBE]', delay: '300', fade: 'fade-right' },
+        { src: k8s, alt: 'k8s-icon', name: 'K8S', shadow: 'shadow-[#326CE5]', delay: '300', fade: 'fade-right' },
+        { src: helm, alt: 'helm-icon', name: 'HELM', shadow: 'shadow-[#008E97]', delay: '300', fade: 'fade-right' },
+        { src: argocd, alt: 'argocd-icon', name: 'ArgoCD', shadow: 'shadow-[#f58d42]', delay: '300', fade: 'fade-right' },
+        { src: terraform, alt: 'terraform-icon', name: 'Terraform', shadow: 'shadow-[#946ced]', delay: '300', fade: 'fade-right' },
+        { src: aws, alt: 'aws-icon', name: 'AWS', shadow: 'shadow-[#FF9900]', delay: '300', fade: 'fade-right' },
+        { src: prometheus, alt: 'prometheus-icon', name: 'Prometheus', shadow: 'shadow-[#E6522C]', delay: '300', fade: 'fade-right' },
+        { src: grafana, alt: 'grafana-icon', name: 'Grafana', shadow: 'shadow-[#F15B2A]', delay: '300', fade: 'fade-right' },
+
+    ]
+
 
 
 export const experienceData = [
     {
+        title: 'DevOps Engineer',
+        company: 'Crocobet',
+        date: 'Aug 2025 - Present',
+        description: `
+        ⚪Currently working as a DevOps Engineer with specialized expertise in monitoring and observability engineering. Responsible for 
+        designing and maintaining CI/CD pipelines, managing containerized applications with Docker, Kubernetes, Helm, ArgoCD and automating infrastructure`,
+        delay: '200',
+        fade: 'fade-left'
+    },
+    {
         title: 'Monitoring Engineer',
         company: 'Crocobet',
-        date: 'Jan 2024 - Present',
+        date: 'Jan 2024 - Aug 2025 • 1.8 mos',
         description: `
         ⚪I actively monitor system performance using Zabbix, Grafana, and Graylog, ensuring
         early detection of anomalies and maintaining smooth and uninterrupted operations. My
