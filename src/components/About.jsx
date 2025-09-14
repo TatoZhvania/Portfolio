@@ -20,7 +20,7 @@ const About = () => {
         </div>
         <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-1 px-4">
           <div
-            className="text-4xl font-bold text-center"
+            className="text-4xl font-bold sm:text-center text-left"
             style={{ letterSpacing: '0.5em' }}
             data-aos="fade-right"
             data-aos-delay="200"
