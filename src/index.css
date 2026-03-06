@@ -6,6 +6,8 @@
 
 ::root {
   --primary-color: #00d8ff;
+  --home-shell-width: 1360px;
+  --home-shell-padding: 24px;
 }
 
 @layer base {
@@ -29,6 +31,12 @@
 
   html {
     @apply scrollbar-none;
+  }
+
+  .content-shell {
+    width: min(100%, var(--home-shell-width));
+    margin-inline: auto;
+    padding-inline: var(--home-shell-padding);
   }
 
   .scrollbar-none {
@@ -55,4 +63,10 @@
   color: #fff;
   background: #9f38f9;
   border: 1px solid #9f38f9;
+}
+
+@media (max-width: 640px) {
+  .content-shell {
+    padding-inline: 16px;
+  }
 }

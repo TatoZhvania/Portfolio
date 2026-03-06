@@ -19,69 +19,73 @@ const Home = () => {
       name="home"
       className="w-full min-h-screen flex relative overflow-hidden"
     >
-      <div className="w-full h-screen absolute top-0 left-0">
-        <ParticleBg />
-      </div>
-      <div className="w-full max-w-[800px] mx-auto min-h-screen px-4 sm:px-6 flex flex-col justify-center lg:pl-[170px] md:pl-[100px]">
-      <motion.div
-          className="hidden md:block bg-[#770fd2] shadow-md shadow-[#770fd2] rounded-sm w-full h-[4px] fixed top-[80px] left-0"
+      <div className="content-shell relative min-h-screen">
+        <div className="absolute inset-0">
+          <ParticleBg />
+        </div>
+        <motion.div
+          className="hidden md:block bg-[#770fd2] shadow-md shadow-[#770fd2] rounded-sm w-full h-[4px] absolute top-[80px] left-0 z-20"
           style={{ scaleX: scrollYProgress }}
         >
           {'.'}
         </motion.div>
-        <div>
-          <p
-            className="text-[#c087f2] text-lg border-b-4 border-[#00d8ff] max-w-[130px] mb-2"
-            data-aos="fade-down"
-            data-aos-delay="500"
+        <div className="relative z-10 min-h-screen grid items-center gap-10 lg:grid-cols-[minmax(0,720px)_300px] lg:justify-between">
+          <div className="max-w-[720px] pt-24 md:pt-0">
+            <div>
+              <p
+                className="text-[#c087f2] text-lg border-b-4 border-[#00d8ff] max-w-[130px] mb-2"
+                data-aos="fade-down"
+                data-aos-delay="500"
+                data-aos-once="false"
+              >
+                Hi, My name is-
+              </p>
+            </div>
+            <div data-aos="fade-down" data-aos-delay="600" data-aos-once="false">
+              <h1 className="text-4xl sm:text-5xl font-bold text-[#fff]">
+                Tato Zhvania.
+              </h1>
+            </div>
+            <div data-aos="fade-right" data-aos-delay="700" data-aos-once="false">
+              <h1 className="text-2xl sm:text-3xl font-bold text-[#fff]">
+                I&apos;m a DevOps Engineer | Full-Stack Engineer
+              </h1>
+            </div>
+            <div data-aos="fade-right" data-aos-delay="700" data-aos-once="false">
+              <p className="text-[#c087f2] py-4 max-w-[600px] text-base sm:text-lg">
+                Self-taught. {'</>'}
+              </p>
+            </div>
+            <div data-aos="fade-right" data-aos-delay="800" data-aos-once="false">
+              <Link to="works" smooth={true} duration={500}>
+                <button className="max-w-[170px] group text-[#fff] cursor-pointer border-2 px-7 py-3 my-2 flex items-center transition duration-250 ease-in-out hover:bg-[#7838f9] hover:border-[#7838f9]">
+                  <p className="cursor-pointer">View Works</p>
+                  <span className="group-hover:rotate-90 duration-300">
+                    <HiArrowNarrowRight className="ml-1" />
+                  </span>
+                </button>
+              </Link>
+            </div>
+          </div>
+
+          <div
+            className="w-[240px] h-[240px] lg:w-[300px] lg:h-[300px] justify-self-center hidden md:block"
+            data-aos="fade-up"
+            data-aos-delay="800"
             data-aos-once="false"
           >
-            Hi, My name is-
-          </p>
-        </div>
-        <div data-aos="fade-down" data-aos-delay="600" data-aos-once="false">
-          <h1 className="text-4xl sm:text-5xl font-bold text-[#fff]">
-            Tato Zhvania.
-          </h1>
-        </div>
-        <div data-aos="fade-right" data-aos-delay="700" data-aos-once="false">
-          <h1 className="text-2xl sm:text-3xl font-bold text-[#fff]">
-            I'm a DevOps Engineer | Full-Stack Enginneer
-          </h1>
-        </div>
-        <div data-aos="fade-right" data-aos-delay="700" data-aos-once="false">
-          <p className="text-[#c087f2] py-4 max-w-[600px] text-base sm:text-lg">
-            Self-taught. {'</>'}
-          </p>
-        </div>
-        <div data-aos="fade-right" data-aos-delay="800" data-aos-once="false">
-          <Link to="works" smooth={true} duration={500}>
-            <button className="max-w-[170px] group text-[#fff] cursor-pointer border-2 px-7 py-3 my-2 flex items-center transition duration-250 ease-in-out hover:bg-[#7838f9] hover:border-[#7838f9]">
-              <p className="cursor-pointer">View Works</p>
-              <span className="group-hover:rotate-90 duration-300">
-                <HiArrowNarrowRight className="ml-1" />
-              </span>
-            </button>
-          </Link>
+            <Lottie animationData={animationData} />
+          </div>
         </div>
       </div>
 
       <div
-        className="w-[300px] h-[300px] m-auto hidden md:block"
-        data-aos="fade-up"
-        data-aos-delay="800"
-        data-aos-once="false"
-      >
-        <Lottie animationData={animationData} />
-      </div>
-
-      <div
-        className="hidden lg:flex fixed flex-col top-[35%] lef-0 text-white"
+        className="hidden lg:flex absolute flex-col top-[35%] left-0 text-white z-20"
         data-aos="fade-right"
         data-aos-delay="800"
       >
-        <ul className="flex flex-col gap-1 z-[-99] ml-[-110px]">
-          <li className="w-[160px] h-[40px] flex justify-between items-center hover:ml-[100px] duration-300 bg-[#171515]">
+        <ul className="flex flex-col gap-1">
+          <li className="w-[160px] h-[40px] flex justify-between items-center -translate-x-[120px] hover:translate-x-0 duration-300 bg-[#171515]">
             <a
               href="https://github.com/TatoZhvania"
               target="_blank"
@@ -92,7 +96,7 @@ const Home = () => {
             </a>
           </li>
 
-          <li className="w-[160px] h-[40px] flex justify-between items-center hover:ml-[100px] duration-300 bg-[#0A66C2]">
+          <li className="w-[160px] h-[40px] flex justify-between items-center -translate-x-[120px] hover:translate-x-0 duration-300 bg-[#0A66C2]">
             <a
               href="https://www.linkedin.com/in/tato-zhvania/"
               target="_blank"
@@ -103,7 +107,7 @@ const Home = () => {
             </a>
           </li>
 
-          <li className="w-[160px] h-[40px] flex justify-between items-center hover:ml-[100px] duration-300 bg-[#DC143C]">
+          <li className="w-[160px] h-[40px] flex justify-between items-center -translate-x-[120px] hover:translate-x-0 duration-300 bg-[#DC143C]">
             <a
               target="_blank"
               rel="noreferrer"
@@ -114,15 +118,15 @@ const Home = () => {
             </a>
           </li>
 
-          <li className="w-[260px] h-[40px] flex justify-between items-center ml-[-100px] hover:ml-[100px] duration-300 bg-[#EB8F00]">
+          <li className="w-[260px] h-[40px] flex justify-between items-center -translate-x-[220px] hover:translate-x-0 duration-300 bg-[#EB8F00]">
             <a
               href="mailto:tato.zhvania.1@gmail.com"
               target="_blank"
               rel="noreferrer"
-              className="flex justify-between items-center w-full text-fray-300 ml-5"
+              className="flex justify-between items-center w-full text-fray-300 px-5"
             >
               <div className="flex gap-4">
-                <p className="ml-[-15px]"> tato.zhvania.1@gmail.com </p>
+                <p>tato.zhvania.1@gmail.com</p>
                 <span>
                   <HiOutlineMail size={25} />
                 </span>

@@ -30,67 +30,72 @@ const Navbar = () => {
   return (
     <div
       className={`
-    fixed w-full h-[80px] flex justify-between items-center z-[99]
-    px-4 bg-[#0c090a7e] transition-all duration-300 ease-in-out ${
-      scroll
-        ? `backdrop-blur-md text-gray-300 shadow-md shadow-[#00d9ff75] top-0`
-        : `fixed top-5`
+    fixed w-full h-[80px] z-[99] ${
+      scroll ? `top-0` : `top-5`
     }  `}
     >
-      <div data-aos="fade-down" data-aos-delay="200">
-        <Link
-          to="home"
-          smooth={true}
-          duration={500}
-          className="cursor-pointer "
-        >
-          <img
-            src={Icon}
-            alt="icon"
-            className="w-36 sm:w-44 md:w-52 ml-0"
-          />
-        </Link>
-      </div>
-      {/* M E N U */}
-      <ul className="hidden md:flex">
-        <li className="nav-links" data-aos="fade-down" data-aos-delay="300">
-          <Link to="home" smooth={true} duration={500}>
-            <p className="cursor-pointer">Home</p>
-          </Link>
-        </li>
-        <li className="nav-links " data-aos="fade-down" data-aos-delay="400">
-          <Link to="about" smooth={true} duration={500}>
-            <p className="cursor-pointer">About</p>
-          </Link>
-        </li>
-        <li className="nav-links " data-aos="fade-down" data-aos-delay="500">
-          <Link to="skills" smooth={true} duration={500}>
-            <p className="cursor-pointer">Skills</p>
-          </Link>
-        </li>
-        <li className="nav-links " data-aos="fade-down" data-aos-delay="500">
-          <Link to="experience" smooth={true} duration={500}>
-            <p className="cursor-pointer">Experience</p>
-          </Link>
-        </li>
-        <li className="nav-links" data-aos="fade-down" data-aos-delay="600">
-          <Link to="works" smooth={true} duration={500}>
-            <p className="cursor-pointer">Works</p>
-          </Link>
-        </li>
-        <li className="nav-links " data-aos="fade-down" data-aos-delay="700">
-          <Link to="contact" smooth={true} duration={500}>
-            <p className="cursor-pointer">Contact</p>
-          </Link>
-        </li>
-      </ul>
-
-      {/* H A M B U R G E R */}
       <div
-        onClick={handleClick}
-        className="text-second md:hidden z-90  cursor-pointer transition-all duration-500 ease-in-out active:scale-110 hover:scale-125 text-[#fff]"
+        className={`content-shell w-full h-full flex justify-between items-center transition-all duration-300 ease-in-out bg-[#0c090a7e] ${
+          scroll
+            ? `backdrop-blur-md text-gray-300 shadow-md shadow-[#00d9ff75]`
+            : ``
+        }`}
       >
-        {!nav ? <FaBars size={25} /> : <FaTimes size={25} />}
+        <div data-aos="fade-down" data-aos-delay="200">
+          <Link
+            to="home"
+            smooth={true}
+            duration={500}
+            className="cursor-pointer "
+          >
+            <img
+              src={Icon}
+              alt="icon"
+              className="w-36 sm:w-44 md:w-52 ml-0"
+            />
+          </Link>
+        </div>
+        {/* M E N U */}
+        <ul className="hidden md:flex">
+          <li className="nav-links" data-aos="fade-down" data-aos-delay="300">
+            <Link to="home" smooth={true} duration={500}>
+              <p className="cursor-pointer">Home</p>
+            </Link>
+          </li>
+          <li className="nav-links " data-aos="fade-down" data-aos-delay="400">
+            <Link to="about" smooth={true} duration={500}>
+              <p className="cursor-pointer">About</p>
+            </Link>
+          </li>
+          <li className="nav-links " data-aos="fade-down" data-aos-delay="500">
+            <Link to="skills" smooth={true} duration={500}>
+              <p className="cursor-pointer">Skills</p>
+            </Link>
+          </li>
+          <li className="nav-links " data-aos="fade-down" data-aos-delay="500">
+            <Link to="experience" smooth={true} duration={500}>
+              <p className="cursor-pointer">Experience</p>
+            </Link>
+          </li>
+          <li className="nav-links" data-aos="fade-down" data-aos-delay="600">
+            <Link to="works" smooth={true} duration={500}>
+              <p className="cursor-pointer">Works</p>
+            </Link>
+          </li>
+          <li className="nav-links " data-aos="fade-down" data-aos-delay="700">
+            <Link to="contact" smooth={true} duration={500}>
+              <p className="cursor-pointer">Contact</p>
+            </Link>
+          </li>
+        </ul>
+
+        {/* H A M B U R G E R */}
+        <div
+          onClick={handleClick}
+          className="text-second md:hidden z-90 cursor-pointer transition-all duration-500 ease-in-out active:scale-110 hover:scale-125 text-[#fff]"
+        >
+          {!nav ? <FaBars size={25} /> : <FaTimes size={25} />}
+        </div>
       </div>
 
       <div
