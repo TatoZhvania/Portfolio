@@ -30,10 +30,9 @@ const Works = () => {
                   backgroundRepeat: 'no-repeat',
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
-                  width: '300px',
                   height: '200px',
                 }}
-                className="shadow-lg shadow-[#343434] group container rounded-md flex justify-center items-center mx-auto content-div relative"
+                className="shadow-lg shadow-[#343434] group container w-full max-w-[300px] rounded-md flex justify-center items-center mx-auto content-div relative"
                 data-aos={fade}
                 data-aos-delay={delay}
                 data-aos-once="false"

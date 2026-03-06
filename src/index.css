@@ -9,10 +9,17 @@
 }
 
 @layer base {
+  html,
   body {
     @apply font-[Raleway];
     @apply scrollbar-none;
     width: 100%;
+    overflow-x: hidden;
+  }
+
+  #root {
+    width: 100%;
+    overflow-x: hidden;
   }
 
   li {

@@ -14,11 +14,15 @@ const Home = () => {
   const { scrollYProgress } = useScroll();
 
   return (
-    <div id="home" name="home" className=" w-full h-screen flex relative">
+    <div
+      id="home"
+      name="home"
+      className="w-full min-h-screen flex relative overflow-hidden"
+    >
       <div className="w-full h-screen absolute top-0 left-0">
         <ParticleBg />
       </div>
-      <div className="w-[800px] mx-auto h-full pl-2 flex flex-col justify-center lg:pl-[170px] md:pl-[100px]">
+      <div className="w-full max-w-[800px] mx-auto min-h-screen px-4 sm:px-6 flex flex-col justify-center lg:pl-[170px] md:pl-[100px]">
       <motion.div
           className="hidden md:block bg-[#770fd2] shadow-md shadow-[#770fd2] rounded-sm w-full h-[4px] fixed top-[80px] left-0"
           style={{ scaleX: scrollYProgress }}
@@ -41,12 +45,12 @@ const Home = () => {
           </h1>
         </div>
         <div data-aos="fade-right" data-aos-delay="700" data-aos-once="false">
-          <h1 className="text-4xl sm:text-2xl font-bold text-[#fff]">
+          <h1 className="text-2xl sm:text-3xl font-bold text-[#fff]">
             I'm a DevOps Engineer | Full-Stack Enginneer
           </h1>
         </div>
         <div data-aos="fade-right" data-aos-delay="700" data-aos-once="false">
-          <p className="text-[#c087f2] py-4 max-w-[600px] text-lg">
+          <p className="text-[#c087f2] py-4 max-w-[600px] text-base sm:text-lg">
             Self-taught. {'</>'}
           </p>
         </div>

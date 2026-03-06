@@ -47,7 +47,7 @@ const Navbar = () => {
           <img
             src={Icon}
             alt="icon"
-            className="w-44 md:w-52 ml-[-30px] md:ml-0"
+            className="w-36 sm:w-44 md:w-52 ml-0"
           />
         </Link>
       </div>

@@ -3,11 +3,11 @@ const About = () => {
   return (
     <div
       name="about"
-      className="w-full h-screen text-gray-300 pb-[200px] pt-[200px]"
+      className="w-full min-h-screen text-gray-300 py-24 md:py-[200px]"
     >
       <div className="flex flex-col justify-center items-center w-full h-full">
         <div
-          className="max-w-[1000px] w-full px-4 grid grid-cols-2 gap-8"
+          className="max-w-[1000px] w-full px-4 grid grid-cols-1 sm:grid-cols-2 gap-8"
           data-aos="fade-left"
           data-aos-delay="200"
           data-aos-once="false"
@@ -20,8 +20,8 @@ const About = () => {
         </div>
         <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-1 px-4">
           <div
-            className="text-4xl font-bold sm:text-center text-left"
-            style={{ letterSpacing: '0.5em' }}
+            className="text-3xl sm:text-4xl font-bold sm:text-center text-left"
+            style={{ letterSpacing: '0.15em' }}
             data-aos="fade-right"
             data-aos-delay="200"
             data-aos-once="false"
