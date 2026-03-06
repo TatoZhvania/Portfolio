@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import { Link } from 'react-scroll';
-import { FaGithub, FaLinkedin, FaFacebook, FaInstagram } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { useScroll, motion } from 'framer-motion';
@@ -77,17 +77,6 @@ const Home = () => {
         data-aos-delay="800"
       >
         <ul className="flex flex-col gap-1 z-[-99] ml-[-110px]">
-          <li className="w-[160px] h-[40px] flex justify-between items-center  hover:ml-[100px] duration-300 bg-[#4267B2]">
-            <a
-              href="https://www.facebook.com/profile.php?id=100009092394563"
-              target="_blank"
-              rel="noreferrer"
-              className="flex justify-between items-center w-full text-fray-300"
-            >
-              Facebook <FaFacebook size={25} />
-            </a>
-          </li>
-
           <li className="w-[160px] h-[40px] flex justify-between items-center hover:ml-[100px] duration-300 bg-[#171515]">
             <a
               href="https://github.com/TatoZhvania"
@@ -96,17 +85,6 @@ const Home = () => {
               className="flex justify-between items-center w-full text-fray-300"
             >
               Github <FaGithub size={25} />
-            </a>
-          </li>
-
-          <li className="w-[160px] h-[40px] flex justify-between items-center hover:ml-[100px]  duration-300 bg-[#d62976]">
-            <a
-              href="https://www.instagram.com/tato_zhvaniaa/"
-              target="_blank"
-              rel="noreferrer"
-              className="flex justify-between items-center w-full text-fray-300"
-            >
-              Instagram <FaInstagram size={25} />
             </a>
           </li>
 

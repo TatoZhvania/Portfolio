@@ -1,16 +1,10 @@
 //Projects images
-import AIimg from './assets/AI-img.png';
-import tictactoe from './assets/tictactoe.png';
 import weatherApp from './assets/weather-app.png';
-import dataSecure from './assets/data-secure.png';
-import blockchain from './assets/blockhain.png';
-import space from './assets/space.png';
 import moviehub from './assets/moviehub.png';
 import netflix from './assets/netflix.png';
 import nikestore from './assets/nikestore.png';
 import bankweb from './assets/bankweb.png';
 import bankapp from './assets/bank-app.png'
-import ticketapp from './assets/ticket-app.png'
 
 //Skillss
 import html from './assets/html.png';
@@ -43,51 +37,11 @@ import prometheus from './assets/prometheus.png'
 
 export const projects = [
     {
-        image: AIimg,
-        title: 'OpenAI',
-        github: "https://github.com/TatoZhvania/AI-App",
-        url: 'https://tatozhvania.github.io/AI-App/',
-        delay: '200',
-        fade: 'fade-right'
-    },
-    {
-        image: tictactoe,
-        title: 'TicTacToe',
-        github: "https://github.com/TatoZhvania/TicTacToe",
-        url: 'https://tatozhvania.github.io/TicTacToe/',
-        delay: '300',
-        fade: 'fade-down'
-    },
-    {
         image: weatherApp,
         title: 'Weather-App',
         github: "https://github.com/TatoZhvania/Weather-App",
         url: 'https://tatozhvania.github.io/Weather-App/',
         delay: '400',
-        fade: 'fade-left'
-    },
-    {
-        image: dataSecure,
-        title: 'DataSecure',
-        github: "https://github.com/TatoZhvania/Data-Secure",
-        url: 'https://data-secure-tz.netlify.app/',
-        delay: '200',
-        fade: 'fade-right'
-    },
-    {
-        image: blockchain,
-        title: 'Blockchain',
-        github: "https://github.com/TatoZhvania/blockchain",
-        url: 'https://blockchain-tz.netlify.app/',
-        delay: '300',
-        fade: 'fade-down'
-    },
-    {
-        image: space,
-        title: 'Space',
-        github: "https://github.com/TatoZhvania/Space",
-        url: 'https://space-tz.netlify.app/',
-        delay: '300',
         fade: 'fade-left'
     },
     {

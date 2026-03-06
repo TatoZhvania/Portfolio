@@ -15,7 +15,7 @@ const Works = () => {
           </p>
 
           <p className="py-5" data-aos="fade-right" data-aos-delay="500">
-            {'//'} Check out some of my recent works
+            {'//'} Check out some of my works
           </p>
         </div>
 
