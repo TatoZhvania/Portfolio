@@ -1,6 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title">
   <title>Nginx</title>
-  <rect width="128" height="128" rx="24" fill="#052E16"/>
-  <path d="M64 14 108 39v50L64 114 20 89V39l44-25Z" fill="#009639"/>
-  <path d="M48 40h10l22 30V40h10v48H80L58 58v30H48V40Z" fill="#FFFFFF"/>
+  <defs>
+    <linearGradient id="nginx-bg" x1="18" y1="16" x2="110" y2="112" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A3D1F"/>
+      <stop offset="1" stop-color="#052E16"/>
+    </linearGradient>
+    <linearGradient id="nginx-hex" x1="64" y1="18" x2="64" y2="110" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#18C964"/>
+      <stop offset="1" stop-color="#009639"/>
+    </linearGradient>
+    <filter id="nginx-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#000000" flood-opacity=".28"/>
+    </filter>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="url(#nginx-bg)"/>
+  <g filter="url(#nginx-shadow)">
+    <path d="M64 16 106 40v48l-42 24L22 88V40l42-24Z" fill="url(#nginx-hex)"/>
+    <path d="M64 24 99 44v40L64 104 29 84V44l35-20Z" fill="#0B8C38" opacity=".3"/>
+    <path d="M45 40h11l27 32V40h10v48H82L55 56v32H45V40Z" fill="#FFFFFF"/>
+  </g>
 </svg>
