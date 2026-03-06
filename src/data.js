@@ -24,6 +24,10 @@ import firebase from './assets/firebase.png';
 import mongodb from './assets/mongodb.png';
 
 import python from './assets/python.png'
+import gitlabPipeline from './assets/gitlab-pipeline.svg'
+import jenkins from './assets/jenkins.svg'
+import haproxy from './assets/haproxy.svg'
+import nginx from './assets/nginx.svg'
 import bash from './assets/bash.png'
 import docker from './assets/Docker.png'
 import k8s from './assets/kubernetes.png'
@@ -33,6 +37,7 @@ import aws from './assets/aws.png'
 import argocd from './assets/argocd.png'
 import grafana from './assets/grafana.png'
 import prometheus from './assets/prometheus.png'
+import n8n from './assets/n8n.svg'
 
 
 export const projects = [
@@ -111,6 +116,10 @@ export const devops_skills =
         { src: bash, alt: 'bash-icon', name: 'Bash', shadow: 'shadow-[#4eaa25]', delay: '300', fade: 'fade-right' },     
         { src: docker, alt: 'docker-icon', name: 'Docker', shadow: 'shadow-[#1D63ED]', delay: '300', fade: 'fade-right' },   
         { src: python, alt: 'python-icon', name: 'Python', shadow: 'shadow-[#4B8BBE]', delay: '300', fade: 'fade-right' },
+        { src: gitlabPipeline, alt: 'gitlab-pipeline-icon', name: 'GitLab Pipeline', shadow: 'shadow-[#FC6D26]', delay: '300', fade: 'fade-right' },
+        { src: jenkins, alt: 'jenkins-icon', name: 'Jenkins', shadow: 'shadow-[#2563EB]', delay: '300', fade: 'fade-right' },
+        { src: haproxy, alt: 'haproxy-icon', name: 'HAProxy', shadow: 'shadow-[#E11D48]', delay: '300', fade: 'fade-right' },
+        { src: nginx, alt: 'nginx-icon', name: 'Nginx', shadow: 'shadow-[#009639]', delay: '300', fade: 'fade-right' },
         { src: k8s, alt: 'k8s-icon', name: 'K8S', shadow: 'shadow-[#326CE5]', delay: '300', fade: 'fade-right' },
         { src: helm, alt: 'helm-icon', name: 'HELM', shadow: 'shadow-[#008E97]', delay: '300', fade: 'fade-right' },
         { src: argocd, alt: 'argocd-icon', name: 'ArgoCD', shadow: 'shadow-[#f58d42]', delay: '300', fade: 'fade-right' },
@@ -118,6 +127,7 @@ export const devops_skills =
         { src: aws, alt: 'aws-icon', name: 'AWS', shadow: 'shadow-[#FF9900]', delay: '300', fade: 'fade-right' },
         { src: prometheus, alt: 'prometheus-icon', name: 'Prometheus', shadow: 'shadow-[#E6522C]', delay: '300', fade: 'fade-right' },
         { src: grafana, alt: 'grafana-icon', name: 'Grafana', shadow: 'shadow-[#F15B2A]', delay: '300', fade: 'fade-right' },
+        { src: n8n, alt: 'n8n-icon', name: 'N8N', shadow: 'shadow-[#EC4899]', delay: '300', fade: 'fade-right' },
 
     ]
 
@@ -131,6 +141,16 @@ export const experienceData = [
         description: `
         ⚪Currently working as a DevOps Engineer with specialized expertise in monitoring and observability engineering. Responsible for 
         designing and maintaining CI/CD pipelines, managing containerized applications with Docker, Kubernetes, Helm, ArgoCD and automating infrastructure`,
+        delay: '200',
+        fade: 'fade-left'
+    },
+    {
+        title: 'Cloud & DevOps Intern',
+        company: 'EPAM Systems',
+        date: 'Jun 2025 - Aug 2025',
+        description: `
+        ⚪Completed a Cloud and DevOps internship focused on Kubernetes, CI/CD, Jenkins, AWS, and Terraform. 
+        Worked with core cloud and automation practices, including container orchestration, deployment pipelines, infrastructure as code, and collaborative Agile workflows.`,
         delay: '200',
         fade: 'fade-left'
     },
@@ -170,5 +190,3 @@ export const experienceData = [
         fade: 'fade-left'
     },
 ];
-
-

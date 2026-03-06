@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+  <title>Nginx</title>
+  <rect width="128" height="128" rx="24" fill="#052E16"/>
+  <path d="M64 14 108 39v50L64 114 20 89V39l44-25Z" fill="#009639"/>
+  <path d="M48 40h10l22 30V40h10v48H80L58 58v30H48V40Z" fill="#FFFFFF"/>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+  <title>GitLab Pipeline</title>
+  <rect width="128" height="128" rx="24" fill="#171321"/>
+  <path d="M64 18 78 58H50L64 18Z" fill="#FC6D26"/>
+  <path d="M28 58h22L64 110 28 58Z" fill="#E24329"/>
+  <path d="M100 58H78L64 110l36-52Z" fill="#FC6D26"/>
+  <path d="M50 58h28L64 110 50 58Z" fill="#FCA326"/>
+</svg>

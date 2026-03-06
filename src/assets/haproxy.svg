@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+  <title>HAProxy</title>
+  <rect width="128" height="128" rx="24" fill="#0F172A"/>
+  <path d="M28 28h16v30h40V28h16v72H84V72H44v28H28V28Z" fill="#E11D48"/>
+  <path d="M54 42h20v16H54z" fill="#F8FAFC"/>
+</svg>
