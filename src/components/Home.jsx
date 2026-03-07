@@ -77,63 +77,61 @@ const Home = () => {
             <Lottie animationData={animationData} />
           </div>
         </div>
-      </div>
+        <div
+          className="hidden lg:flex fixed left-0 top-1/2 -translate-y-1/2 flex-col text-white z-30"
+          data-aos="fade-right"
+          data-aos-delay="800"
+        >
+          <ul className="flex flex-col gap-1">
+            <li className="w-[180px] h-[44px] px-0 flex items-center -translate-x-[136px] hover:translate-x-0 duration-300 bg-[#171515]">
+              <a
+                href="https://github.com/TatoZhvania"
+                target="_blank"
+                rel="noreferrer"
+                className="flex justify-between items-center w-full h-full px-4"
+              >
+                <span className="whitespace-nowrap">Github</span>
+                <FaGithub size={25} />
+              </a>
+            </li>
 
-      <div
-        className="hidden lg:flex absolute flex-col top-[35%] left-0 text-white z-20"
-        data-aos="fade-right"
-        data-aos-delay="800"
-      >
-        <ul className="flex flex-col gap-1">
-          <li className="w-[160px] h-[40px] flex justify-between items-center -translate-x-[120px] hover:translate-x-0 duration-300 bg-[#171515]">
-            <a
-              href="https://github.com/TatoZhvania"
-              target="_blank"
-              rel="noreferrer"
-              className="flex justify-between items-center w-full text-fray-300"
-            >
-              Github <FaGithub size={25} />
-            </a>
-          </li>
+            <li className="w-[180px] h-[44px] px-0 flex items-center -translate-x-[136px] hover:translate-x-0 duration-300 bg-[#0A66C2]">
+              <a
+                href="https://www.linkedin.com/in/tato-zhvania/"
+                target="_blank"
+                rel="noreferrer"
+                className="flex justify-between items-center w-full h-full px-4"
+              >
+                <span className="whitespace-nowrap">Linkedin</span>
+                <FaLinkedin size={25} />
+              </a>
+            </li>
 
-          <li className="w-[160px] h-[40px] flex justify-between items-center -translate-x-[120px] hover:translate-x-0 duration-300 bg-[#0A66C2]">
-            <a
-              href="https://www.linkedin.com/in/tato-zhvania/"
-              target="_blank"
-              rel="noreferrer"
-              className="flex justify-between items-center w-full text-fray-300"
-            >
-              Linkeding <FaLinkedin size={25} />
-            </a>
-          </li>
+            <li className="w-[180px] h-[44px] px-0 flex items-center -translate-x-[136px] hover:translate-x-0 duration-300 bg-[#DC143C]">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href={CV}
+                className="flex justify-between items-center w-full h-full px-4"
+              >
+                <span className="whitespace-nowrap">Resume</span>
+                <BsFillPersonLinesFill size={25} />
+              </a>
+            </li>
 
-          <li className="w-[160px] h-[40px] flex justify-between items-center -translate-x-[120px] hover:translate-x-0 duration-300 bg-[#DC143C]">
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href={CV}
-              className="flex justify-between items-center w-full text-fray-300"
-            >
-              Resume <BsFillPersonLinesFill size={25} />
-            </a>
-          </li>
-
-          <li className="w-[260px] h-[40px] flex justify-between items-center -translate-x-[220px] hover:translate-x-0 duration-300 bg-[#EB8F00]">
-            <a
-              href="mailto:tato.zhvania.1@gmail.com"
-              target="_blank"
-              rel="noreferrer"
-              className="flex justify-between items-center w-full text-fray-300 px-5"
-            >
-              <div className="flex gap-4">
-                <p>tato.zhvania.1@gmail.com</p>
-                <span>
-                  <HiOutlineMail size={25} />
-                </span>
-              </div>
-            </a>
-          </li>
-        </ul>
+            <li className="w-[300px] h-[44px] px-0 flex items-center -translate-x-[256px] hover:translate-x-0 duration-300 bg-[#EB8F00]">
+              <a
+                href="mailto:tato.zhvania.1@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+                className="flex justify-between items-center w-full h-full px-4"
+              >
+                <span className="whitespace-nowrap">tato.zhvania.1@gmail.com</span>
+                <HiOutlineMail size={25} />
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );
