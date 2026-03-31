@@ -8,9 +8,9 @@ const Experience = () => {
       className="w-full md:screen text-gray-300 pt-[200px] "
     >
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
-        <div>
+        <div className="text-center">
           <p
-            className="font-bold text-[#9f38f9] text-5xl border-b-4 border-[#00d8ff] max-w-[400px] mb-2"
+            className="font-bold text-[#9f38f9] text-5xl border-b-4 border-[#00d8ff] max-w-[400px] mb-2 mx-auto"
             data-aos="fade-right"
             data-aos-delay="500"
             data-aos-once="false"

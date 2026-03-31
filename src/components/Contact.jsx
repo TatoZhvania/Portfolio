@@ -26,9 +26,9 @@ const Contact = () => {
         target="_blank"
         className="flex flex-col max-w-[600px] w-full"
       >
-        <div className="pb-8">
+        <div className="pb-8 text-center">
           <div data-aos="fade-right" data-aos-delay="300" data-aos-once="false">
-            <p className="font-bold text-[#9f38f9] text-4xl border-b-4 border-[#00d8ff] max-w-[140px] mt-8">
+            <p className="font-bold text-[#9f38f9] text-4xl border-b-4 border-[#00d8ff] max-w-[140px] mt-8 mx-auto">
               Contact
             </p>
           </div>
