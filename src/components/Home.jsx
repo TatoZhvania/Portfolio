@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import { HiArrowNarrowRight } from 'react-icons/hi';
-import { Link } from 'react-scroll';
+import { scroller } from 'react-scroll';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
@@ -12,6 +12,12 @@ import ParticleBg from './particle/ParticleBg';
 
 const Home = () => {
   const { scrollYProgress } = useScroll();
+  const scrollToWorks = () => {
+    scroller.scrollTo('works', {
+      smooth: true,
+      duration: 500,
+    });
+  };
 
   return (
     <div
@@ -20,7 +26,7 @@ const Home = () => {
       className="w-full min-h-screen flex relative overflow-hidden"
     >
       <div className="content-shell relative min-h-screen">
-        <div className="absolute inset-0">
+        <div className="absolute inset-0 z-0 pointer-events-none">
           <ParticleBg />
         </div>
         <motion.div
@@ -57,14 +63,16 @@ const Home = () => {
               </p>
             </div>
             <div data-aos="fade-right" data-aos-delay="800" data-aos-once="false">
-              <Link to="works" smooth={true} duration={500}>
-                <button className="max-w-[170px] group text-[#fff] cursor-pointer border-2 px-7 py-3 my-2 flex items-center transition duration-250 ease-in-out hover:bg-[#7838f9] hover:border-[#7838f9]">
-                  <p className="cursor-pointer">View Works</p>
-                  <span className="group-hover:rotate-90 duration-300">
-                    <HiArrowNarrowRight className="ml-1" />
-                  </span>
-                </button>
-              </Link>
+              <button
+                type="button"
+                onClick={scrollToWorks}
+                className="group flex w-[170px] text-[#fff] cursor-pointer border-2 px-7 py-3 my-2 items-center justify-center gap-1 transition duration-250 ease-in-out hover:bg-[#7838f9] hover:border-[#7838f9]"
+              >
+                <span>View Works</span>
+                <span className="group-hover:rotate-90 duration-300">
+                  <HiArrowNarrowRight className="ml-1" />
+                </span>
+              </button>
             </div>
           </div>
 

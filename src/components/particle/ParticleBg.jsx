@@ -8,7 +8,7 @@ const ParticleBg = () => {
 
   return (
     <Particles
-      className="w-full h-full "
+      className="w-full h-full pointer-events-none"
       id="tsparticles"
       init={loadParticles}
       options={{
