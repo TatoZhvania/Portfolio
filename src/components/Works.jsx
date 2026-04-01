@@ -1,6 +1,5 @@
 import { projects } from '../data';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 
 const Works = () => {
@@ -30,14 +29,11 @@ const Works = () => {
                 >
                   <img src={image} alt={title} className="h-44 w-full object-cover object-top" />
                   <CardHeader className="pb-1">
-                    <Badge variant="outline" className="border-[#9f38f9]/80 text-[#c087f2]">
-                      Project
-                    </Badge>
-                    <CardTitle className="pt-2 text-xl font-semibold">{title}</CardTitle>
+                    <CardTitle className="text-xl font-semibold">{title}</CardTitle>
                   </CardHeader>
-                  <CardContent className="pt-0 text-sm text-slate-300">
+                  {/* <CardContent className="pt-0 text-sm text-slate-300">
                     Responsive frontend project with polished UI and production deployment.
-                  </CardContent>
+                  </CardContent> */}
                   <CardFooter className="grid grid-cols-2 gap-2 border-t border-white/10 bg-transparent">
                     <Button
                       asChild
