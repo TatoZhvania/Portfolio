@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import { scroller } from 'react-scroll';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
@@ -9,6 +8,8 @@ import CV from '../assets/Tato-Zhvania.pdf';
 import Lottie from 'lottie-react';
 import animationData from '../assets/svg/animation_lnangngs.json';
 import ParticleBg from './particle/ParticleBg';
+import { Button } from '@/components/ui/button';
+import { Badge } from '@/components/ui/badge';
 
 const Home = () => {
   const { scrollYProgress } = useScroll();
@@ -23,9 +24,9 @@ const Home = () => {
     <div
       id="home"
       name="home"
-      className="w-full min-h-screen flex relative overflow-hidden"
+      className="relative flex w-full overflow-hidden"
     >
-      <div className="content-shell relative min-h-screen">
+      <div className="content-shell relative min-h-screen pt-24 md:pt-0">
         <div className="absolute inset-0 z-0 pointer-events-none">
           <ParticleBg />
         </div>
@@ -35,11 +36,11 @@ const Home = () => {
         >
           {'.'}
         </motion.div>
-        <div className="relative z-10 min-h-screen grid items-center gap-10 lg:grid-cols-[minmax(0,720px)_300px] lg:justify-between">
-          <div className="max-w-[720px] pt-24 md:pt-0">
+        <div className="relative z-10 grid min-h-screen items-center gap-10 lg:grid-cols-[minmax(0,720px)_300px] lg:justify-between">
+          <div className="max-w-[720px] xl:pl-14">
             <div>
               <p
-                className="text-[#c087f2] text-lg border-b-4 border-[#00d8ff] max-w-[130px] mb-2"
+                className="mb-3 max-w-[132px] border-b-4 border-[#00d8ff] text-base text-[#c087f2] sm:text-lg"
                 data-aos="fade-down"
                 data-aos-delay="500"
                 data-aos-once="false"
@@ -48,31 +49,41 @@ const Home = () => {
               </p>
             </div>
             <div data-aos="fade-down" data-aos-delay="600" data-aos-once="false">
-              <h1 className="text-4xl sm:text-5xl font-bold text-[#fff]">
+              <h1 className="text-5xl font-bold leading-tight text-[#fff] sm:text-6xl">
                 Tato Zhvania.
               </h1>
             </div>
             <div data-aos="fade-right" data-aos-delay="700" data-aos-once="false">
-              <h1 className="text-2xl sm:text-3xl font-bold text-[#fff]">
+              <h2 className="text-2xl font-semibold leading-tight text-[#fff] sm:text-3xl">
                 I&apos;m a DevOps Engineer | Full-Stack Engineer
-              </h1>
+              </h2>
             </div>
             <div data-aos="fade-right" data-aos-delay="700" data-aos-once="false">
-              <p className="text-[#c087f2] py-4 max-w-[600px] text-base sm:text-lg">
+              <p className="max-w-[600px] py-4 text-base text-[#c087f2] sm:text-lg">
                 Self-taught. {'</>'}
               </p>
             </div>
+            <div className="mb-2 flex flex-wrap gap-2" data-aos="fade-up" data-aos-delay="760">
+              <Badge variant="outline" className="border-cyan-400/70 text-cyan-300">
+                Kubernetes
+              </Badge>
+              <Badge variant="outline" className="border-[#c087f2]/70 text-[#c087f2]">
+                Python
+              </Badge>
+              <Badge variant="outline" className="border-slate-300/40 text-slate-300">
+                Full-Stack
+              </Badge>
+            </div>
             <div data-aos="fade-right" data-aos-delay="800" data-aos-once="false">
-              <button
-                type="button"
+              <Button
                 onClick={scrollToWorks}
-                className="group flex w-[170px] text-[#fff] cursor-pointer border-2 px-7 py-3 my-2 items-center justify-center gap-1 transition duration-250 ease-in-out hover:bg-[#7838f9] hover:border-[#7838f9]"
+                className="group relative z-40 mt-2 h-11 w-[170px] border border-[#9f38f9] bg-transparent text-white hover:bg-[#7838f9]"
               >
                 <span>View Works</span>
                 <span className="group-hover:rotate-90 duration-300">
                   <HiArrowNarrowRight className="ml-1" />
                 </span>
-              </button>
+              </Button>
             </div>
           </div>
 
@@ -86,7 +97,7 @@ const Home = () => {
           </div>
         </div>
         <div
-          className="hidden lg:flex fixed left-0 top-1/2 -translate-y-1/2 flex-col text-white z-30"
+          className="fixed left-0 top-1/2 z-30 hidden -translate-y-1/2 flex-col text-white xl:flex"
           data-aos="fade-right"
           data-aos-delay="800"
         >

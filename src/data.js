@@ -15,7 +15,6 @@ import react from './assets/react.png';
 import redux from './assets/redux.png';
 import vite from './assets/vite.png'
 import tailwind from './assets/tailwind.png';
-import php from './assets/php.png';
 import mysql from './assets/mysql.png';
 import sql from './assets/sql.png';
 import github from './assets/github.png';
@@ -96,7 +95,7 @@ export const web_skills =
     [
         { src: html, alt: 'html-icon', name: 'HTML', shadow: 'shadow-[#e34c26bf]', delay: '300', fade: 'fade-right' },
         { src: css, alt: 'css-icon', name: 'CSS', shadow: 'shadow-[#00d9ff43]', delay: '400', fade: 'fade-right' },
-        { src: javascript, alt: 'js-icon', name: 'JavasCript', shadow: 'shadow-[#f0da4f94]', delay: '300', fade: 'fade-left' },
+        { src: javascript, alt: 'js-icon', name: 'JavaScript', shadow: 'shadow-[#f0da4f94]', delay: '300', fade: 'fade-left' },
         { src: typescript, alt: 'ts-icon', name: 'TypeScript', shadow: 'shadow-[#3178c6]', delay: '400', fade: 'fade-left' },
         { src: vite, alt: 'vite-icon', name: 'Vite', shadow: 'shadow-[#611f80]', delay: '300', fade: 'fade-right' },
         { src: react, alt: 'react-icon', name: 'React', shadow: 'shadow-[#00d9ff43]', delay: '400', fade: 'fade-right' },
@@ -157,7 +156,7 @@ export const experienceData = [
     {
         title: 'Monitoring Engineer',
         company: 'Crocobet',
-        date: 'Jan 2024 - Aug 2025 • 1.8 mos',
+        date: 'Jan 2024 - Aug 2025 • 1 yr 8 mos',
         description: `
         ⚪I actively monitor system performance using Zabbix, Grafana, and Graylog, ensuring
         early detection of anomalies and maintaining smooth and uninterrupted operations. My

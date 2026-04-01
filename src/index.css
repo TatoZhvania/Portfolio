@@ -7,7 +7,7 @@
 @tailwind components;
 @tailwind utilities;
 
-::root {
+:root {
   --primary-color: #00d8ff;
   --home-shell-width: 1360px;
   --home-shell-padding: 24px;
@@ -16,7 +16,7 @@
 @layer base {
   html,
   body {
-    @apply font-[Raleway];
+    @apply font-sans;
     @apply scrollbar-none;
     width: 100%;
     overflow-x: hidden;
@@ -25,11 +25,6 @@
   #root {
     width: 100%;
     overflow-x: hidden;
-  }
-
-  li {
-    @apply px-4;
-    @apply cursor-pointer;
   }
 
   html {
@@ -86,6 +81,8 @@
     --sidebar-accent-foreground: oklch(0.205 0 0);
     --sidebar-border: oklch(0.922 0 0);
     --sidebar-ring: oklch(0.708 0 0);
+    --home-shell-width: 1360px;
+    --home-shell-padding: 24px;
   }
   .dark {
     --background: oklch(0.145 0 0);
@@ -121,28 +118,13 @@
     --sidebar-ring: oklch(0.556 0 0);
   }
   * {
-    @apply border-border outline-ring/50;
+    border-color: hsl(var(--border));
+    outline-color: hsl(var(--ring) / 0.5);
   }
   body {
-    @apply bg-background text-foreground;
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
   }
-}
-
-.nav-links p {
-  position: relative;
-  color: #fff;
-  font-weight: 500;
-  transition: 0.2s ease-in-out;
-  border: 1px solid #9f38f9;
-  padding: 10px;
-  font-size: 0.8rem;
-  margin-top: 5px;
-}
-
-.nav-links p:hover {
-  color: #fff;
-  background: #9f38f9;
-  border: 1px solid #9f38f9;
 }
 
 @media (max-width: 640px) {

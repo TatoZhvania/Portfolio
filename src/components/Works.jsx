@@ -1,66 +1,66 @@
 import { projects } from '../data';
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
 
 const Works = () => {
   return (
-    <div name="works" className="w-full md:screen text-gray-300 pt-[200px]">
-      <div className="md:max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
-        <div className="pb-8 mx-auto">
-          <p
-            className="font-bold text-[#9f38f9] text-4xl border-b-4 border-[#00d8ff] max-w-[120px] mt-8 mx-auto"
-            data-aos="fade-right"
-            data-aos-delay="400"
-            data-aos-once="false"
-          >
-            Works
-          </p>
+    <section name="works" className="w-full pt-24 sm:pt-28 lg:pt-32">
+      <div className="content-shell">
+        <div className="mx-auto max-w-6xl">
+          <div className="mb-8 text-center sm:mb-10">
+            <p className="mx-auto mb-3 inline-block border-b-4 border-[#00d8ff] text-3xl font-bold text-[#9f38f9] sm:text-4xl">
+              Works
+            </p>
+            <p className="text-sm text-slate-300 sm:text-base">
+              {'//'} Check out some of my recent projects
+            </p>
+          </div>
 
-          <p className="py-5" data-aos="fade-right" data-aos-delay="500">
-            {'//'} Check out some of my works
-          </p>
-        </div>
-
-        <div className="grid gap-2 sm:gap-3 md:grid-cols-2 xl:grid-cols-3">
-          {projects.map((project, index) => {
-            const { image, title, github, url, delay, fade } = project;
-            return (
-              <div
-                key={index}
-                style={{
-                  backgroundImage: `url(${image})`,
-                  backgroundRepeat: 'no-repeat',
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                  height: '200px',
-                }}
-                className="shadow-lg shadow-[#343434] group container w-full max-w-[300px] rounded-md flex justify-center items-center mx-auto content-div relative"
-                data-aos={fade}
-                data-aos-delay={delay}
-                data-aos-once="false"
-              >
-                {/* Hover Content */}
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 backdrop-blur-sm bg-[#0c090aa5] flex flex-col justify-center items-center transform group-hover:scale-105 transition-all duration-300 ease-in-out">
-                  <span className="text-2xl font-bold text-white tracking-wider">
-                    {title}
-                  </span>
-                  <div className="flex space-x-4 mt-4">
-                    <a href={github} rel="noreferrer" target="_blank">
-                      <button className="mx-6 text-center rounded-lg px-4 py-2 m-2 bg-white text-gray-700 font-bold text-lg">
+          <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+            {projects.map((project) => {
+              const { image, title, github, url, delay, fade } = project;
+              return (
+                <Card
+                  key={title}
+                  data-aos={fade}
+                  data-aos-delay={delay}
+                  data-aos-once="false"
+                  className="overflow-hidden border border-cyan-400/20 bg-white/5 text-white shadow-[0_10px_30px_rgba(0,0,0,0.35)] backdrop-blur-sm"
+                >
+                  <img src={image} alt={title} className="h-44 w-full object-cover object-top" />
+                  <CardHeader className="pb-1">
+                    <Badge variant="outline" className="border-[#9f38f9]/80 text-[#c087f2]">
+                      Project
+                    </Badge>
+                    <CardTitle className="pt-2 text-xl font-semibold">{title}</CardTitle>
+                  </CardHeader>
+                  <CardContent className="pt-0 text-sm text-slate-300">
+                    Responsive frontend project with polished UI and production deployment.
+                  </CardContent>
+                  <CardFooter className="grid grid-cols-2 gap-2 border-t border-white/10 bg-transparent">
+                    <Button
+                      asChild
+                      variant="outline"
+                      className="border-white/25 bg-transparent text-white hover:bg-white/10"
+                    >
+                      <a href={github} target="_blank" rel="noreferrer">
                         Code
-                      </button>
-                    </a>
-                    <a href={url} rel="noreferrer" target="_blank">
-                      <button className="mx-6 text-center rounded-lg px-4 py-2 m-2 bg-white text-gray-700 font-bold text-lg">
+                      </a>
+                    </Button>
+                    <Button asChild className="bg-[#7838f9] text-white hover:bg-[#6530d4]">
+                      <a href={url} target="_blank" rel="noreferrer">
                         Live
-                      </button>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            );
-          })}
+                      </a>
+                    </Button>
+                  </CardFooter>
+                </Card>
+              );
+            })}
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

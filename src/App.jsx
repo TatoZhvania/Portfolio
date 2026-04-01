@@ -9,18 +9,19 @@ import Works from './components/Works';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import Cursor from './components/cursor/Cursor';
-//test
+
 function App() {
   useEffect(() => {
     Aos.init({
-      disable: 'mobile',
-      duration: 1800,
+      disable: () => window.innerWidth < 1024,
+      duration: 700,
       offset: 100,
+      once: true,
     });
   }, []);
 
   return (
-    <div className="bg-[#0C090A]">
+    <div className="dark bg-[#0C090A] text-slate-100">
       <Cursor />
       <Navbar />
       <Home />

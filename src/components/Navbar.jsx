@@ -1,171 +1,119 @@
 import { useEffect, useState } from 'react';
-import { FaBars, FaTimes } from 'react-icons/fa';
 import { Link } from 'react-scroll';
-import {
-  AiOutlineHome,
-  AiFillProject,
-  AiOutlineMail,
-  AiOutlineAppstore,
-} from 'react-icons/ai';
-import { BsPerson } from 'react-icons/bs';
+import { Menu } from 'lucide-react';
 import Icon from '../assets/icon.svg';
+import { Button } from '@/components/ui/button';
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from '@/components/ui/sheet';
+
+const navItems = [
+  { label: 'Home', to: 'home' },
+  { label: 'About', to: 'about' },
+  { label: 'Skills', to: 'skills' },
+  { label: 'Works', to: 'works' },
+  { label: 'Experience', to: 'experience' },
+  { label: 'Contact', to: 'contact' },
+];
 
 const Navbar = () => {
-  const [nav, setNav] = useState(false);
-  const [scroll, setScroll] = useState(false);
-  const handleClick = () => setNav(!nav);
-
-  const onNavScroll = () => {
-    window.scrollY > 30 ? setScroll(true) : setScroll(false);
-  };
+  const [scrolled, setScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
-    window.addEventListener('scroll', onNavScroll);
-
-    return () => {
-      window.removeEventListener('scroll', onNavScroll);
-    };
+    const onScroll = () => setScrolled(window.scrollY > 24);
+    onScroll();
+    window.addEventListener('scroll', onScroll);
+    return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
   return (
-    <div
-      className={`
-    fixed w-full h-[80px] z-[99] ${
-      scroll ? `top-0` : `top-5`
-    }  `}
+    <header
+      className="fixed inset-x-0 top-0 z-[100]"
     >
       <div
-        className={`content-shell w-full h-full flex justify-between items-center transition-all duration-300 ease-in-out bg-[#0c090a7e] ${
-          scroll
-            ? `backdrop-blur-md text-gray-300 shadow-md shadow-[#00d9ff75]`
-            : ``
+        className={`w-full backdrop-blur-lg transition-all duration-300 ${
+          scrolled
+            ? 'bg-[#08070e]/92 shadow-[0_8px_30px_rgba(0,216,255,0.15)]'
+            : 'bg-[#08070e]/70'
         }`}
       >
-        <div data-aos="fade-down" data-aos-delay="200">
-          <Link
-            to="home"
-            smooth={true}
-            duration={500}
-            className="cursor-pointer "
-          >
-            <img
-              src={Icon}
-              alt="icon"
-              className="w-36 sm:w-44 md:w-52 ml-0"
-            />
+        <div className="content-shell flex h-[72px] items-center justify-between px-1 sm:px-2">
+          <Link to="home" smooth={true} duration={500} className="cursor-pointer">
+            <img src={Icon} alt="Portfolio logo" className="w-28 sm:w-36 md:w-44" />
           </Link>
-        </div>
-        {/* M E N U */}
-        <ul className="hidden md:flex">
-          <li className="nav-links" data-aos="fade-down" data-aos-delay="300">
-            <Link to="home" smooth={true} duration={500}>
-              <p className="cursor-pointer">Home</p>
-            </Link>
-          </li>
-          <li className="nav-links " data-aos="fade-down" data-aos-delay="400">
-            <Link to="about" smooth={true} duration={500}>
-              <p className="cursor-pointer">About</p>
-            </Link>
-          </li>
-          <li className="nav-links " data-aos="fade-down" data-aos-delay="500">
-            <Link to="skills" smooth={true} duration={500}>
-              <p className="cursor-pointer">Skills</p>
-            </Link>
-          </li>
-          <li className="nav-links " data-aos="fade-down" data-aos-delay="500">
-            <Link to="experience" smooth={true} duration={500}>
-              <p className="cursor-pointer">Experience</p>
-            </Link>
-          </li>
-          <li className="nav-links" data-aos="fade-down" data-aos-delay="600">
-            <Link to="works" smooth={true} duration={500}>
-              <p className="cursor-pointer">Works</p>
-            </Link>
-          </li>
-          <li className="nav-links " data-aos="fade-down" data-aos-delay="700">
-            <Link to="contact" smooth={true} duration={500}>
-              <p className="cursor-pointer">Contact</p>
-            </Link>
-          </li>
-        </ul>
 
-        {/* H A M B U R G E R */}
-        <div
-          onClick={handleClick}
-          className="text-second md:hidden z-90 cursor-pointer transition-all duration-500 ease-in-out active:scale-110 hover:scale-125 text-[#fff]"
-        >
-          {!nav ? <FaBars size={25} /> : <FaTimes size={25} />}
+          <nav className="hidden md:block">
+            <ul className="flex items-center gap-2 lg:gap-3">
+              {navItems.map((item) => (
+                <li key={item.to} className="px-0">
+                  <Link to={item.to} smooth={true} duration={500} offset={-80}>
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="border-[#9f38f9]/60 bg-transparent text-white hover:border-[#00d8ff] hover:bg-[#9f38f9]/20 hover:text-white"
+                    >
+                      {item.label}
+                    </Button>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+
+          <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
+            <SheetTrigger asChild>
+              <Button
+                aria-label="Open navigation menu"
+                variant="ghost"
+                size="icon"
+                className="md:hidden text-white hover:bg-white/10 hover:text-white"
+              >
+                <Menu className="h-6 w-6" />
+              </Button>
+            </SheetTrigger>
+            <SheetContent
+              side="right"
+              className="w-[86%] max-w-xs border-l border-[#00d8ff]/30 bg-[#07060d]/95 p-0 text-white"
+            >
+              <SheetHeader className="border-b border-white/10 pb-4">
+                <SheetTitle className="text-white">Navigation</SheetTitle>
+                <SheetDescription className="sr-only">
+                  Main site sections
+                </SheetDescription>
+              </SheetHeader>
+              <nav className="px-4 py-4">
+                <ul className="space-y-3">
+                  {navItems.map((item) => (
+                    <li key={item.to} className="px-0">
+                      <Link
+                        to={item.to}
+                        smooth={true}
+                        duration={500}
+                        offset={-72}
+                        onClick={() => setIsMobileMenuOpen(false)}
+                      >
+                        <Button
+                          variant="outline"
+                          className="h-11 w-full justify-start border-[#9f38f9]/60 bg-transparent text-base text-white hover:border-[#00d8ff] hover:bg-[#9f38f9]/20 hover:text-white"
+                        >
+                          {item.label}
+                        </Button>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
+            </SheetContent>
+          </Sheet>
         </div>
       </div>
-
-      <div
-        className={`${
-          nav ? 'left-0' : 'left-[-100%]'
-        } fixed top-0 w-[70%] h-screen text-[#fff] bg-[rgba(0,0,0,0.96)] flex flex-col justify-center items-center transition-all duration-500 ease-in-out`}
-      >
-        <ul className="flex flex-col justify-center items-center gap-y-[50px] w-full h-full">
-          <li className="text-3xl border-b-4 border-[#9f38f9]">
-            <Link
-              onClick={handleClick}
-              to="home"
-              smooth={true}
-              duration={500}
-              className="flex"
-            >
-              <AiOutlineHome size={30} className="mr-3" /> <p>Home</p>
-            </Link>
-          </li>
-          <li className="text-3xl border-b-4 border-[#9f38f9] text-white">
-            <Link
-              onClick={handleClick}
-              to="about"
-              smooth={true}
-              duration={500}
-              className="flex"
-            >
-              <BsPerson size={30} className="mr-3" />
-              <p>About</p>
-            </Link>
-          </li>
-          <li className="text-3xl border-b-4 border-[#9f38f9]">
-            <Link
-              onClick={handleClick}
-              to="skills"
-              smooth={true}
-              duration={500}
-              className="flex"
-            >
-              <AiOutlineAppstore size={30} className="mr-3" />
-              <p>Skills</p>
-            </Link>
-          </li>
-          <li className="text-3xl border-b-4 border-[#9f38f9]">
-            <Link
-              onClick={handleClick}
-              to="works"
-              smooth={true}
-              duration={500}
-              className="flex"
-            >
-              <AiFillProject size={30} className="mr-3" />
-              <p>Works</p>
-            </Link>
-          </li>
-          <li className="text-3xl border-b-4 border-[#9f38f9]">
-            <Link
-              onClick={handleClick}
-              to="contact"
-              smooth={true}
-              duration={500}
-              className="flex"
-            >
-              <AiOutlineMail size={30} className="mr-3" />
-              <p>Contact</p>
-            </Link>
-          </li>
-        </ul>
-      </div>
-    </div>
+    </header>
   );
 };
 

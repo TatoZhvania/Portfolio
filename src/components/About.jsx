@@ -1,27 +1,26 @@
-/* eslint-disable react/no-unescaped-entities */
 const About = () => {
   return (
-    <div
+    <section
       name="about"
-      className="w-full min-h-screen text-gray-300 py-24 md:py-[200px]"
+      className="w-full py-24 text-gray-300 sm:py-28 lg:py-32"
     >
-      <div className="flex flex-col justify-center items-center w-full h-full">
+      <div className="content-shell">
         <div
-          className="max-w-[1000px] w-full px-4 grid grid-cols-1 sm:grid-cols-2 gap-8"
+          className="mx-auto grid w-full max-w-5xl grid-cols-1 gap-8 sm:grid-cols-2"
           data-aos="fade-left"
           data-aos-delay="200"
           data-aos-once="false"
         >
-          <div className="sm:text-right pb-8 pl-4">
-            <p className="text-4xl font-bold inline border-b-4 border-[#00d8ff] text-[#9f38f9]">
+          <div className="pb-8 sm:text-right">
+            <p className="inline border-b-4 border-[#00d8ff] text-3xl font-bold text-[#9f38f9] sm:text-4xl">
               About
             </p>
           </div>
         </div>
-        <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-1 px-4">
+        <div className="mx-auto grid w-full max-w-5xl gap-6 sm:grid-cols-2">
           <div
-            className="text-3xl sm:text-4xl font-bold sm:text-center text-left"
-            style={{ letterSpacing: '0.15em' }}
+            className="text-left text-3xl font-bold sm:text-center sm:text-4xl"
+            style={{ letterSpacing: '0.04em' }}
             data-aos="fade-right"
             data-aos-delay="200"
             data-aos-once="false"
@@ -29,13 +28,13 @@ const About = () => {
             <p>Building reliable systems.</p>
           </div>
           <div data-aos="fade-left" data-aos-delay="400" data-aos-once="false">
-            <p>
+            <p className="text-base leading-8 text-slate-300">
               I am a DevOps Engineer from Tbilisi, Georgia with a background in
               web development and monitoring engineering. My work focuses on
               automation, observability, and building scalable, dependable
               systems across on-premises infrastructure and AWS.
             </p>
-            <p className="mt-4">
+            <p className="mt-4 text-base leading-8 text-slate-300">
               I work across infrastructure automation, containerized
               environments, deployment workflows, and observability systems. I
               am also a Certified Kubernetes Application Developer (CKAD), with
@@ -45,7 +44,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
