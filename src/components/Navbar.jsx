@@ -54,9 +54,9 @@ const Navbar = () => {
                 <li key={item.to} className="px-0">
                   <Link to={item.to} smooth={true} duration={500} offset={-80}>
                     <Button
-                      variant="outline"
+                      variant="ghost"
                       size="sm"
-                      className="border-[#9f38f9]/60 bg-transparent text-white hover:border-[#00d8ff] hover:bg-[#9f38f9]/20 hover:text-white"
+                      className="border border-[#9f38f9]/60 bg-transparent text-white hover:border-[#00d8ff] hover:bg-[#9f38f9]/20 hover:text-white"
                     >
                       {item.label}
                     </Button>
@@ -99,8 +99,8 @@ const Navbar = () => {
                         onClick={() => setIsMobileMenuOpen(false)}
                       >
                         <Button
-                          variant="outline"
-                          className="h-11 w-full justify-start border-[#9f38f9]/60 bg-transparent text-base text-white hover:border-[#00d8ff] hover:bg-[#9f38f9]/20 hover:text-white"
+                          variant="ghost"
+                          className="h-11 w-full justify-start border border-[#9f38f9]/60 bg-transparent text-base text-white hover:border-[#00d8ff] hover:bg-[#9f38f9]/20 hover:text-white"
                         >
                           {item.label}
                         </Button>
