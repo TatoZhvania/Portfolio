@@ -1,5 +1,4 @@
 import { HiArrowNarrowRight } from 'react-icons/hi';
-import { scroller } from 'react-scroll';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
@@ -14,10 +13,11 @@ import { Badge } from '@/components/ui/badge';
 const Home = () => {
   const { scrollYProgress } = useScroll();
   const scrollToWorks = () => {
-    scroller.scrollTo('works', {
-      smooth: true,
-      duration: 500,
-    });
+    const worksSection = document.querySelector('[name="works"]');
+    if (!worksSection) return;
+
+    const top = worksSection.getBoundingClientRect().top + window.scrollY - 80;
+    window.scrollTo({ top, behavior: 'smooth' });
   };
 
   return (
@@ -74,7 +74,7 @@ const Home = () => {
                 Full-Stack
               </Badge>
             </div>
-            <div data-aos="fade-right" data-aos-delay="800" data-aos-once="false">
+            <div>
               <Button
                 onClick={scrollToWorks}
                 className="group relative z-40 mt-2 h-11 w-[170px] border border-[#9f38f9] bg-transparent text-white hover:bg-[#7838f9]"
@@ -97,53 +97,53 @@ const Home = () => {
           </div>
         </div>
         <div
-          className="fixed left-0 top-1/2 z-30 hidden -translate-y-1/2 flex-col text-white xl:flex"
+          className="pointer-events-none fixed left-0 top-1/2 z-30 hidden -translate-y-1/2 flex-col text-white xl:flex"
           data-aos="fade-right"
           data-aos-delay="800"
         >
-          <ul className="flex flex-col gap-1">
-            <li className="w-[180px] h-[44px] px-0 flex items-center -translate-x-[136px] hover:translate-x-0 duration-300 bg-[#171515]">
+          <ul className="pointer-events-none flex flex-col gap-1">
+            <li className="pointer-events-auto w-[180px] h-[44px] px-0 flex items-center -translate-x-[136px] hover:translate-x-0 duration-300 bg-[#171515]">
               <a
                 href="https://github.com/TatoZhvania"
                 target="_blank"
                 rel="noreferrer"
-                className="flex justify-between items-center w-full h-full px-4"
+                className="pointer-events-auto flex justify-between items-center w-full h-full px-4"
               >
                 <span className="whitespace-nowrap">Github</span>
                 <FaGithub size={25} />
               </a>
             </li>
 
-            <li className="w-[180px] h-[44px] px-0 flex items-center -translate-x-[136px] hover:translate-x-0 duration-300 bg-[#0A66C2]">
+            <li className="pointer-events-auto w-[180px] h-[44px] px-0 flex items-center -translate-x-[136px] hover:translate-x-0 duration-300 bg-[#0A66C2]">
               <a
                 href="https://www.linkedin.com/in/tato-zhvania/"
                 target="_blank"
                 rel="noreferrer"
-                className="flex justify-between items-center w-full h-full px-4"
+                className="pointer-events-auto flex justify-between items-center w-full h-full px-4"
               >
                 <span className="whitespace-nowrap">Linkedin</span>
                 <FaLinkedin size={25} />
               </a>
             </li>
 
-            <li className="w-[180px] h-[44px] px-0 flex items-center -translate-x-[136px] hover:translate-x-0 duration-300 bg-[#DC143C]">
+            <li className="pointer-events-auto w-[180px] h-[44px] px-0 flex items-center -translate-x-[136px] hover:translate-x-0 duration-300 bg-[#DC143C]">
               <a
                 target="_blank"
                 rel="noreferrer"
                 href={CV}
-                className="flex justify-between items-center w-full h-full px-4"
+                className="pointer-events-auto flex justify-between items-center w-full h-full px-4"
               >
                 <span className="whitespace-nowrap">Resume</span>
                 <BsFillPersonLinesFill size={25} />
               </a>
             </li>
 
-            <li className="w-[300px] h-[44px] px-0 flex items-center -translate-x-[256px] hover:translate-x-0 duration-300 bg-[#EB8F00]">
+            <li className="pointer-events-auto w-[300px] h-[44px] px-0 flex items-center -translate-x-[256px] hover:translate-x-0 duration-300 bg-[#EB8F00]">
               <a
                 href="mailto:tato.zhvania.1@gmail.com"
                 target="_blank"
                 rel="noreferrer"
-                className="flex justify-between items-center w-full h-full px-4"
+                className="pointer-events-auto flex justify-between items-center w-full h-full px-4"
               >
                 <span className="whitespace-nowrap">tato.zhvania.1@gmail.com</span>
                 <HiOutlineMail size={25} />
