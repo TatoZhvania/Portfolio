@@ -25,7 +25,7 @@ const Works = () => {
                   data-aos={fade}
                   data-aos-delay={delay}
                   data-aos-once="false"
-                  className="overflow-hidden border border-cyan-400/20 bg-white/5 text-white shadow-[0_10px_30px_rgba(0,0,0,0.35)] backdrop-blur-sm"
+                  className="overflow-hidden border border-[#2f2a45] bg-[#110f1c] text-white shadow-[0_8px_24px_rgba(0,0,0,0.35)] backdrop-blur-sm transition-all duration-200 hover:-translate-y-1 hover:border-[#00d8ff]/40"
                 >
                   <img src={image} alt={title} className="h-44 w-full object-cover object-top" />
                   <CardHeader className="pb-1">
@@ -34,7 +34,7 @@ const Works = () => {
                   {/* <CardContent className="pt-0 text-sm text-slate-300">
                     Responsive frontend project with polished UI and production deployment.
                   </CardContent> */}
-                  <CardFooter className="grid grid-cols-2 gap-2 border-t border-white/10 bg-transparent">
+                  <CardFooter className="grid grid-cols-2 gap-2 border-t border-[#2f2a45] bg-transparent">
                     <Button
                       asChild
                       variant="outline"

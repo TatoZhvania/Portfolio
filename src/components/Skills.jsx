@@ -11,7 +11,7 @@ const SkillGrid = ({ items }) => (
         data-aos={skill.fade}
         data-aos-delay={skill.delay}
         data-aos-once="false"
-        className={`border border-white/10 bg-white/5 text-white transition-transform duration-200 hover:-translate-y-1 ${skill.shadow}`}
+        className={`border border-[#2f2a45] bg-[#110f1c] text-white shadow-[0_8px_24px_rgba(0,0,0,0.35)] backdrop-blur-sm transition-all duration-200 hover:-translate-y-1 hover:border-[#00d8ff]/40 ${skill.shadow}`}
       >
         <CardContent className="flex min-h-[104px] flex-col items-center justify-center gap-2 p-3 text-center">
           <img src={skill.src} alt={skill.alt} className="h-9 w-9 object-contain" />
@@ -37,16 +37,16 @@ const Skills = () => {
           </div>
 
           <Tabs defaultValue="web" className="w-full flex-col">
-            <TabsList className="mx-auto grid w-full max-w-xl grid-cols-2 rounded-2xl border border-white/20 bg-[#11101a]/90 p-1.5 shadow-[0_0_24px_rgba(0,216,255,0.08)]">
+            <TabsList className="mx-auto grid w-full max-w-xl grid-cols-2 rounded-2xl border border-[#352a67] bg-[#0f0d1a] p-1.5 shadow-[0_0_24px_rgba(0,216,255,0.1)] backdrop-blur-md">
               <TabsTrigger
                 value="web"
-                className="h-11 cursor-pointer rounded-xl border border-transparent text-sm font-semibold text-slate-300 transition-all hover:bg-white/10 hover:text-white data-[state=active]:border-cyan-300/40 data-[state=active]:bg-gradient-to-r data-[state=active]:from-[#00b8d9] data-[state=active]:to-[#7b3ff3] data-[state=active]:text-white data-[state=active]:shadow-[0_6px_20px_rgba(123,63,243,0.45)]"
+                className="h-11 cursor-pointer rounded-xl border border-[#2f2a45] bg-[#1a1629] text-sm font-semibold text-slate-200 transition-all hover:bg-[#221d35] hover:text-white data-[state=active]:border-cyan-300/40 data-[state=active]:bg-gradient-to-r data-[state=active]:from-[#00b8d9] data-[state=active]:to-[#7b3ff3] data-[state=active]:text-white data-[state=active]:shadow-[0_6px_20px_rgba(123,63,243,0.45)]"
               >
                 Web Development
               </TabsTrigger>
               <TabsTrigger
                 value="devops"
-                className="h-11 cursor-pointer rounded-xl border border-transparent text-sm font-semibold text-slate-300 transition-all hover:bg-white/10 hover:text-white data-[state=active]:border-cyan-300/40 data-[state=active]:bg-gradient-to-r data-[state=active]:from-[#00b8d9] data-[state=active]:to-[#7b3ff3] data-[state=active]:text-white data-[state=active]:shadow-[0_6px_20px_rgba(123,63,243,0.45)]"
+                className="h-11 cursor-pointer rounded-xl border border-[#2f2a45] bg-[#1a1629] text-sm font-semibold text-slate-200 transition-all hover:bg-[#221d35] hover:text-white data-[state=active]:border-cyan-300/40 data-[state=active]:bg-gradient-to-r data-[state=active]:from-[#00b8d9] data-[state=active]:to-[#7b3ff3] data-[state=active]:text-white data-[state=active]:shadow-[0_6px_20px_rgba(123,63,243,0.45)]"
               >
                 DevOps
               </TabsTrigger>
@@ -64,7 +64,7 @@ const Skills = () => {
             <TabsContent value="devops" className="mt-6">
               <div className="mb-3">
                 <Badge variant="outline" className="border-[#c087f2]/70 text-[#c087f2]">
-                  Cloud & Infrastructure
+                  DevOps & Cloud
                 </Badge>
               </div>
               <SkillGrid items={devops_skills} />
