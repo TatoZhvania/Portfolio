@@ -1,1 +1,1 @@
-URL: https://tatozhvania.github.io/Portfolio/
+https://tatozhvania.github.io/Portfolio/
